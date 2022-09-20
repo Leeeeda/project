@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Nav, Navbar, NavDropdown,Container,Button,Form,Carousel,Row,Col,Card} from 'react-bootstrap'
+import {Nav, Navbar, NavDropdown,Container,Button,Form,Carousel,Row,Col,Card,Dropdown} from 'react-bootstrap'
 
 function App() {
   return (
@@ -14,33 +14,21 @@ function App() {
           <Nav className="me-auto">
             <NavDropdown title="국내 영화" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">가족/코미디</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                SF/액션
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">SF/액션 </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">공포/스릴러</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">
-                로맨스
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">로맨스</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="해외 영화" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">가족/코미디</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-              SF/액션
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">SF/액션</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">공포/스릴러</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">
-                로맨스
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">로맨스</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="애니매이션" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">키즈/가족</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-              SF/액션
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">SF/액션</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">코미디</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">
-                로맨스
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">로맨스</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Form className="d-flex">
@@ -56,7 +44,7 @@ function App() {
       </Container>
     </Navbar>
   
-    <Carousel fade>
+    <Carousel fade className='carouselBanner'>
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -82,40 +70,43 @@ function App() {
         />
       </Carousel.Item>
     </Carousel>
+    <Carousel>
 
-    <Container>
+    <Container className='card-box'>
       <br/>
     <p style={{color:'white', fontSize:'20px' ,fontWeight:'bold'}}> 이번 주 인기 있는 영화</p>
-      <Row md={3} >
-      <Card style={{ width: '18rem' }}>
+      <Row md={4} >
+        <Carousel.Item>
+      <Card style={{ width: '15rem' ,height:'22rem' }}>
       <Card.Img variant="top" src='https://movie-phinf.pstatic.net/20220826_188/1661489945659Su2RI_JPEG/movie_image.jpg?type=m203_290_2' />
     </Card>
 
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '15rem' ,height:'22rem' }}>
       <Card.Img variant="top" src=' https://movie-phinf.pstatic.net/20220805_227/1659685387586PIORG_JPEG/movie_image.jpg?type=m203_290_2' />
     </Card>
 
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '15rem' ,height:'22rem' }}>
       <Card.Img variant="top" src='https://movie-phinf.pstatic.net/20220727_209/1658912961873lVd2W_JPEG/movie_image.jpg?type=m203_290_2' />
     </Card>
 
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '15rem' ,height:'22rem' }}>
       <Card.Img variant="top" src=' https://movie-phinf.pstatic.net/20220509_176/1652081912471yhg3N_JPEG/movie_image.jpg?type=m203_290_2' />
     </Card>
-
-    <Card style={{ width: '18rem' }}>
+    </Carousel.Item>
+    <Carousel.Item>
+    <Card style={{ width: '15rem' ,height:'22rem' }}>
       <Card.Img variant="top" src='https://movie-phinf.pstatic.net/20220907_295/1662518947849s9ym1_JPEG/movie_image.jpg?type=m203_290_2' />
     </Card>
 
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '15rem' ,height:'22rem' }}>
       <Card.Img variant="top" src='https://movie-phinf.pstatic.net/20220729_1/1659070685587fXfeh_JPEG/movie_image.jpg?type=w480_2' />
     </Card>
-
+</Carousel.Item>
     
       </Row>
       
     </Container>
-
+</Carousel>
     <Nav className="justify-content-center" activeKey="/home">
         <Nav.Item>
           <Nav.Link href="/home">전체 페이지</Nav.Link>
