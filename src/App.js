@@ -1,18 +1,85 @@
 import logo from './logo.svg';
 import './App.css';
 import {Nav, Navbar, NavDropdown,Container,Button,Form,Carousel,Row,Col,Card,Dropdown} from 'react-bootstrap'
+import {useState} from 'react'
+import {Route, Routes} from 'react-router-dom'
+import MovieCard from './component/MovieCard'
+
 
 function App() {
+
+  let [movie, setMovie] = useState(
+    [
+      {
+        id: 'mv001',
+      itemName : '공조2 : 인터네셔날',
+      content : '공조2: 인터내셔날 : 네이버 영화 (naver.com)',
+      imgPath : 'https://movie-phinf.pstatic.net/20220826_188/1661489945659Su2RI_JPEG/movie_image.jpg?type=m203_290_2',
+      videoPath :  'https://youtu.be/fzUKUfHeIYA'
+      },
+      {
+        id: 'mv002',
+      itemName : '헌트',
+      content : '헌트 : 네이버 영화 (naver.com)',
+      imgPath : ' https://movie-phinf.pstatic.net/20220805_227/1659685387586PIORG_JPEG/movie_image.jpg?type=m203_290_2',
+      videoPath :  'https://youtu.be/CSOb8gia_mg'
+      },
+      {
+        id: 'mv003',
+      itemName : '한산: 용의 출현',
+      content : ' 한산: 용의 출현 : 네이버 영화 (naver.com)',
+      imgPath : 'https://movie-phinf.pstatic.net/20220727_209/1658912961873lVd2W_JPEG/movie_image.jpg?type=m203_290_2',
+      videoPath :  'https://youtu.be/GduEtmvwcI0'
+      },
+      {
+        id: 'mv004',
+      itemName : '탑건:매버릭',
+      content : '탑건: 매버릭 : 네이버 영화 (naver.com)',
+      imgPath : 'https://movie-phinf.pstatic.net/20220509_176/1652081912471yhg3N_JPEG/movie_image.jpg?type=m203_290_2',
+      videoPath :  'https://youtu.be/Mrj9XACVJ8U'
+      },
+      {
+        id: 'mv005',
+      itemName : '블랙폰',
+      content : ' 블랙폰 : 네이버 영화 (naver.com)',
+      imgPath : 'https://movie-phinf.pstatic.net/20220907_295/1662518947849s9ym1_JPEG/movie_image.jpg?type=m203_290_2',
+      videoPath :  'https://youtu.be/OSFfTzwuXKk'
+      },
+      {
+        id: 'mv006',
+      itemName : '놉',
+      content : ' 놉 : 네이버 영화 (naver.com)',
+      imgPath : 'https://movie-phinf.pstatic.net/20220729_1/1659070685587fXfeh_JPEG/movie_image.jpg?type=w480_2',
+      videoPath :  'https://youtu.be/JllzxDFhhnI'
+      },
+      {
+        id: 'mv007',
+      itemName : '알라딘',
+      content : ' 알라딘 : 네이버 영화 (naver.com)',
+      imgPath : ' https://movie-phinf.pstatic.net/20190524_104/1558663170174Q2mmw_JPEG/movie_image.jpg?type=m203_290_2',
+      videoPath :  'https://youtu.be/KrM3vS5sy2w'
+      },
+      {
+        id: 'mv008',
+      itemName : '외계+인 1부',
+      content : ' 외계+인 1부 : 네이버 영화 (naver.com)',
+      imgPath : 'https://movie-phinf.pstatic.net/20220708_75/16572722362230AyHS_JPEG/movie_image.jpg?type=m203_290_2',
+      videoPath :  'https://youtu.be/l9288UVTHkA'
+      }
+    ]
+  )
   return (
   <div className='main'>
+
+    {/* 상단바 영역 */}
     <Navbar collapseOnSelect expand="lg" 
     style={{backgroundColor:'rgb(22, 33, 62)',fontSize:'17px'}} variant="dark">
       <Container>
-        <Navbar.Brand href="#home" style={{fontSize:'22px',fontWeight:'bold'}}>Movie Intro</Navbar.Brand>
+        <Navbar.Brand href="/" style={{fontSize:'22px',fontWeight:'bold'}}>Movie Intro</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="국내 영화" id="collasible-nav-dropdown">
+            <NavDropdown title="국내 영화" href='/k-movie' id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">가족/코미디</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">SF/액션 </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">공포/스릴러</NavDropdown.Item>
@@ -44,7 +111,9 @@ function App() {
       </Container>
     </Navbar>
   
-    <Carousel fade className='carouselBanner'>
+
+  {/* 배너 부분 */}
+    <Carousel  className='carouselBanner' fade>
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -70,43 +139,24 @@ function App() {
         />
       </Carousel.Item>
     </Carousel>
-    <Carousel>
-
-    <Container className='card-box'>
+    
+    
+    {/* 카드 영역 */}
+    <Container >
       <br/>
     <p style={{color:'white', fontSize:'20px' ,fontWeight:'bold'}}> 이번 주 인기 있는 영화</p>
-      <Row md={4} >
-        <Carousel.Item>
-      <Card style={{ width: '15rem' ,height:'22rem' }}>
-      <Card.Img variant="top" src='https://movie-phinf.pstatic.net/20220826_188/1661489945659Su2RI_JPEG/movie_image.jpg?type=m203_290_2' />
-    </Card>
-
-    <Card style={{ width: '15rem' ,height:'22rem' }}>
-      <Card.Img variant="top" src=' https://movie-phinf.pstatic.net/20220805_227/1659685387586PIORG_JPEG/movie_image.jpg?type=m203_290_2' />
-    </Card>
-
-    <Card style={{ width: '15rem' ,height:'22rem' }}>
-      <Card.Img variant="top" src='https://movie-phinf.pstatic.net/20220727_209/1658912961873lVd2W_JPEG/movie_image.jpg?type=m203_290_2' />
-    </Card>
-
-    <Card style={{ width: '15rem' ,height:'22rem' }}>
-      <Card.Img variant="top" src=' https://movie-phinf.pstatic.net/20220509_176/1652081912471yhg3N_JPEG/movie_image.jpg?type=m203_290_2' />
-    </Card>
-    </Carousel.Item>
-    <Carousel.Item>
-    <Card style={{ width: '15rem' ,height:'22rem' }}>
-      <Card.Img variant="top" src='https://movie-phinf.pstatic.net/20220907_295/1662518947849s9ym1_JPEG/movie_image.jpg?type=m203_290_2' />
-    </Card>
-
-    <Card style={{ width: '15rem' ,height:'22rem' }}>
-      <Card.Img variant="top" src='https://movie-phinf.pstatic.net/20220729_1/1659070685587fXfeh_JPEG/movie_image.jpg?type=w480_2' />
-    </Card>
-</Carousel.Item>
     
+      <Row sm={1} md={3} >
+      {movie.map((data,i)=>{
+      return( <MovieCard movie={movie} id={data.id} i={i}></MovieCard>
+      );
+      })}
       </Row>
       
     </Container>
-</Carousel>
+
+{/* footer 영역 */}
+
     <Nav className="justify-content-center" activeKey="/home">
         <Nav.Item>
           <Nav.Link href="/home">전체 페이지</Nav.Link>
@@ -126,6 +176,28 @@ function App() {
         <br/>
         <p className='font-style'>본 콘텐츠의 저작권은 저작권자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</p>
         <br/>
+
+        {/* Routes 영역 */}
+        <Routes>
+          <Route path='/'></Route>
+          <Route path='/k-movie'></Route>
+            <Route path='FC'></Route>
+            <Route path='SA'></Route>
+            <Route path='HS'></Route>
+            <Route path='Rom'></Route>
+          <Route path='/F-movie'></Route>
+            <Route path='FC'></Route>
+            <Route path='SA'></Route>
+            <Route path='HS'></Route>
+            <Route path='Rom'></Route>
+          <Route path='/Ani'></Route>
+            <Route path='KF'></Route>
+            <Route path='SA'></Route>
+            <Route path='Com'></Route>
+            <Route path='Rom'></Route>
+
+          <Route path='*' element={<div>404 Not Found</div>} />
+        </Routes>
   </div>
   )
 }
