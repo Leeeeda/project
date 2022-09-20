@@ -84,8 +84,9 @@ function App() {
     </Carousel>
 
     <Container>
-    
-      <Row sm={1} md={3} >
+      <br/>
+    <p style={{color:'white', fontSize:'20px' ,fontWeight:'bold'}}> 이번 주 인기 있는 영화</p>
+      <Row md={3} >
       <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src='https://movie-phinf.pstatic.net/20220826_188/1661489945659Su2RI_JPEG/movie_image.jpg?type=m203_290_2' />
     </Card>
