@@ -3,11 +3,12 @@ import './App.css';
 import {Nav, Navbar, NavDropdown,Container,Button,Form,Carousel,Row,Col,Card,Dropdown} from 'react-bootstrap';
 import {useState} from 'react';
 import {Route, Routes,useNavigate} from 'react-router-dom';
-import MovieCard from './component/MovieCard.js';
+import MovieCard1 from './component/MovieCard.js';
 import MovieInfo from './component/MovieInfo.js';
+import MovieData from './component/MovieData'
 
 
-function App() {
+function App({movie}) {
   let navigate = useNavigate();
   let [movies, setMovies] = useState(
     [
@@ -17,7 +18,7 @@ function App() {
       contentP : '감독: 이석훈 \n 출연 : 현빈,유해진,윤아',
       contentS : "공조 이즈 백! 이번엔 삼각 공조다! 남한으로 숨어든 글로벌 범죄 조직을 잡기 위해 새로운 공조 수사에 투입된 북한 형사 ‘림철령’(현빈). 수사 중의 실수로 사이버수사대로 전출됐던 남한 형사 ‘강진태’(유해진)는 광수대 복귀를 위해 모두가 기피하는 ‘철령’의 파트너를 자청한다.",
       imgPath : 'https://movie-phinf.pstatic.net/20220826_188/1661489945659Su2RI_JPEG/movie_image.jpg?type=m203_290_2',
-      videoPath : <iframe width="789" height="444" src="https://www.youtube.com/embed/fzUKUfHeIYA" title="3배 더 강력해진 하나의 팀! [공조2: 인터내셔날] 메인 예고편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      videoPath : <iframe width="789" height="444" src="https://www.youtube.com/embed/fzUKUfHeIYA" title="3배 더 강력해진 하나의 팀! [공조2: 인터내셔날] 메인 예고편" frameborder="0" allow="autoplay 'src'; fullscreen"></iframe>
       },
       {
         id: 'mv002',
@@ -38,7 +39,7 @@ function App() {
       {
         id: 'mv004',
       itemName : '탑건:매버릭',
-      contentP : '감독: 조셉 코신스키 이정재 출연: 톰 크루즈, 마일즈 텔러, 제니퍼 코넬리',
+      contentP : '감독: 조셉 코신스키 출연: 톰 크루즈, 마일즈 텔러, 제니퍼 코넬리',
       contentS : "한순간의 실수도 용납되지 않는 하늘 위, 가장 압도적인 비행이 시작된다!",
       imgPath : 'https://movie-phinf.pstatic.net/20220509_176/1652081912471yhg3N_JPEG/movie_image.jpg?type=m203_290_2',
       videoPath :  <iframe width="789" height="444" src="https://www.youtube.com/embed/Mrj9XACVJ8U" title="[탑건: 매버릭] 메인 예고편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -74,7 +75,7 @@ function App() {
       contentS : " 2022년 인간 속에 수감된 외계인 죄수를 쫓는 이들 1391년 고려 말 소문 속의 신검을 차지하려는 도사들 시간의 문이 열리고 모든 것이 바뀌기 시작했다!",
       imgPath : 'https://movie-phinf.pstatic.net/20220708_75/16572722362230AyHS_JPEG/movie_image.jpg?type=m203_290_2',
       videoPath :  <iframe width="789" height="444" src="https://www.youtube.com/embed/l9288UVTHkA" title="[외계+인] 1부 메인 예고편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      }
+      },
     ]
   )
   return (
@@ -89,24 +90,9 @@ function App() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="국내 영화" href='/k-movie' id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">가족/코미디</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">SF/액션 </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">공포/스릴러</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">로맨스</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="해외 영화" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">가족/코미디</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">SF/액션</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">공포/스릴러</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">로맨스</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="애니매이션" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">키즈/가족</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">SF/액션</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">코미디</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">로맨스</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link onClick={()=>{navigate('/k-movie')}}>국내 영화</Nav.Link>
+            <Nav.Link onClick={()=>{navigate('/f-movie')}}>해외 영화</Nav.Link>
+            <Nav.Link onClick={()=>{navigate('/ani')}}>애니메이션</Nav.Link>
             {/* 탭으로 바꿀 예정 */}
           </Nav>
           <Form className="d-flex">
@@ -154,33 +140,50 @@ function App() {
     {/* 카드 영역 */}
     <Container >
       <br/>
-    <p style={{color:'white', fontSize:'20px' ,fontWeight:'bold'}}> 이번 주 인기 있는 영화</p>
+    <p style={{color:'white', fontSize:'20px' ,fontWeight:'bold'}}> 금주 인기 있는 영화</p>
     
-      <Row sm={1} md={3} >
-      {movies.map((data,i)=>{
-      return( <MovieCard movies={movies} movie={data} id={data.id} i={i}></MovieCard>
-      );
-      })}
-      </Row>
-      
+      <MovieCard1 movies={movies} id={movies.id}></MovieCard1>
     </Container>
+{/* 
+    <Container >
+      <br/>
+    <p style={{color:'white', fontSize:'20px' ,fontWeight:'bold'}}> 온 가족이 보기 좋은 영화</p>
+    
+      <MovieCard1 movies={movies} id={movies.id}></MovieCard1>
+    </Container>
+
+    <Container >
+      <br/>
+    <p style={{color:'white', fontSize:'20px' ,fontWeight:'bold'}}> 오싹해지는 공포 영화</p>
+    
+      <MovieCard1 movies={movies} id={movies.id}></MovieCard1>
+    </Container>
+
+    <Container >
+      <br/>
+    <p style={{color:'white', fontSize:'20px' ,fontWeight:'bold'}}> 국내 영화</p>
+    
+      <MovieCard1 movies={movies} id={movies.id}></MovieCard1>
+    </Container> */}
     {/* Routes */}
     
     <Routes>
 
-          <Route path='/' element={<div className='main'></div>}></Route>
+          <Route path='/' element={<div className='carouselBanner'></div>}></Route>
+
+
           <Route path='/movieInfo/:id' element={<MovieInfo   movies={movies} />} />
-          <Route path='/k-movie'></Route>
+          <Route path='/k-movie' element={<div>국내영화</div>}></Route>
             <Route path='FC'></Route>
             <Route path='SA'></Route>
             <Route path='HS'></Route>
             <Route path='Rom'></Route>
-          <Route path='/F-movie'></Route>
+          <Route path='/f-movie'></Route>
             <Route path='FC'></Route>
             <Route path='SA'></Route>
             <Route path='HS'></Route>
             <Route path='Rom'></Route>
-          <Route path='/Ani'></Route>
+          <Route path='/ani'></Route>
             <Route path='KF'></Route>
             <Route path='SA'></Route>
             <Route path='Com'></Route>
@@ -190,7 +193,8 @@ function App() {
           <Route path='*' element={<div>404 Not Found</div>} />
         </Routes>
 {/* footer 영역 */}
-<footer>
+<footer className='footer'>
+  <br/>
     <Nav className="justify-content-center" activeKey="/home">
         <Nav.Item>
           <Nav.Link href="/home">전체 페이지</Nav.Link>
