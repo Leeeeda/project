@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import {Nav, Navbar, NavDropdown,Container,Button,Form,Carousel,Row,Col,Card,Dropdown} from 'react-bootstrap';
+import {Nav, Navbar,Container,Button,Form,Carousel,Row,Col,Card} from 'react-bootstrap';
 import {useState} from 'react';
-import {Route, Routes,useNavigate} from 'react-router-dom';
+import {Route, Routes,useNavigate,Link} from 'react-router-dom';
 import MovieCard1 from './component/MovieCard.js';
 import MovieInfo from './component/MovieInfo.js';
 import MovieData from './component/MovieData'
+import K_Movie from './component/K-movie';
 
 
 function App({movie}) {
@@ -82,18 +83,15 @@ function App({movie}) {
   <div className='main'>
 
     {/* 상단바 영역 */}
-    <header>
     <Navbar collapseOnSelect expand="lg" 
     style={{backgroundColor:'rgb(22, 33, 62)',fontSize:'17px'}} variant="dark">
       <Container>
         <Navbar.Brand href="/" style={{fontSize:'22px',fontWeight:'bold'}}>Movie Intro</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link onClick={()=>{navigate('/k-movie')}}>국내 영화</Nav.Link>
             <Nav.Link onClick={()=>{navigate('/f-movie')}}>해외 영화</Nav.Link>
             <Nav.Link onClick={()=>{navigate('/ani')}}>애니메이션</Nav.Link>
-            {/* 탭으로 바꿀 예정 */}
+            
           </Nav>
           <Form className="d-flex">
             <Form.Control
@@ -104,12 +102,11 @@ function App({movie}) {
             />
             <Button style={{backgroundColor:'black'}}>Search</Button>
           </Form>
-        </Navbar.Collapse>
       </Container>
     </Navbar>
-  </header>
-
-  {/* 배너 부분 */}
+<Routes>
+          <Route path='/' element={<div className='carouselBanner'>
+             {/* 배너 부분 */}
     <Carousel  className='carouselBanner' fade>
       <Carousel.Item onClick={()=>{navigate('/movieInfo/mv001')}}>
         <img
@@ -135,8 +132,8 @@ function App({movie}) {
           height='700px'
         />
       </Carousel.Item>
-    </Carousel>
-
+    </Carousel> 
+    
     {/* 카드 영역 */}
     <Container >
       <br/>
@@ -165,15 +162,14 @@ function App({movie}) {
     
       <MovieCard1 movies={movies} id={movies.id}></MovieCard1>
     </Container> */}
-    {/* Routes */}
     
-    <Routes>
-
-          <Route path='/' element={<div className='carouselBanner'></div>}></Route>
+          </div>}>
+            
+            </Route>
 
 
           <Route path='/movieInfo/:id' element={<MovieInfo   movies={movies} />} />
-          <Route path='/k-movie' element={<div>국내영화</div>}></Route>
+          <Route path='/k-movie' element={<K_Movie></K_Movie>}></Route>
             <Route path='FC'></Route>
             <Route path='SA'></Route>
             <Route path='HS'></Route>
@@ -192,6 +188,14 @@ function App({movie}) {
 
           <Route path='*' element={<div>404 Not Found</div>} />
         </Routes>
+ 
+    
+
+
+   
+    {/* Routes */}
+    
+    
 {/* footer 영역 */}
 <footer className='footer'>
   <br/>

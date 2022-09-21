@@ -17,7 +17,7 @@ function MovieInfo({movies}){
     
     return (
     <div>    
-        <Card style={{ width: '80%', margin:'0 auto', backgroundColor:'rgb(15, 52, 96)'}} 
+        <Card style={{ width: '60%', margin:'0 auto', backgroundColor:'rgb(15, 52, 96)'}} 
         className='movieInfoPosition'>
 
     <CloseButton variant="white" onClick={()=>{navigate('/')}}></CloseButton>

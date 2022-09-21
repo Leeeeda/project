@@ -15,7 +15,7 @@ function MovieCard1({movies,id}){
     // </Card>
     
     
-    <Carousel interval={null}>
+    <Carousel interval={null} indicators={false}>
 
         <Carousel.Item>
         <Card class='card' key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
