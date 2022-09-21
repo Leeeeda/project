@@ -19,6 +19,21 @@
   padding: 0;
 }
 
+.card:hover{
+  cursor: pointer;
+}
+
+.card:hover img{
+  transform: scale(1,1);
+}
+
+.cardPosition{
+  flex-wrap: nowrap;
+  display: inline;
+  position: relative;
+  float: left;
+  margin: 100px;
+}
 .carouselBanner{
   display: inline;
   position: relative;
