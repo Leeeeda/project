@@ -5,10 +5,29 @@
   height: 100%
 }
 
+//캐러셀 영역
 .carouselBanner{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
+}
+
+.carousel{
+  position: relative;
+  margin: 10px;
+}
+
+.carousel-control-next {
+  width: 5%;
+  left: 98% ;
+}
+.carousel-control-prev-icon{
+  position: absolute;
+  right: 100%;
+}
+
+.nav-tabs{
   
 }
 
@@ -25,9 +44,7 @@
 }
 
 .card{
-  margin-right: 10px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin: 15px;
   border: 0px;
   padding: 0px;
   float: left;
