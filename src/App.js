@@ -6,7 +6,6 @@ import {Route, Routes,useNavigate,Link} from 'react-router-dom';
 import MovieCard1 from './component/MovieCard.js';
 import MovieInfo from './component/MovieInfo.js';
 import K_Movie from './component/K-movie';
-import F_Movie from './component/F_Movie';
 import Ani from './component/Ani';
 import movieData from './component/MovieData.js';
 import MovieCard2 from './component/MovieCard2';
@@ -15,7 +14,6 @@ import MovieCard3 from './component/MovieCard3';
 
 function App() {
   let navigate = useNavigate();
-  console.log(movieData);
   let [movies, setMovies] = useState(movieData);
   
   return (
@@ -23,12 +21,12 @@ function App() {
 
     {/* 상단바 영역 */}
     <Navbar collapseOnSelect expand="lg" 
-    style={{backgroundColor:'rgb(22, 33, 62)',fontSize:'17px'}} variant="dark">
+    style={{backgroundColor:'rgb(22, 33, 62)',
+    fontSize:'18px',fontWeight:'bold'}}variant="dark">
       <Container>
-        <Navbar.Brand href="/" style={{fontSize:'22px',fontWeight:'bold'}}>Movie Intro</Navbar.Brand>
+        <Navbar.Brand href="/" style={{fontSize:'24px',fontWeight:'bold'}}>Movie Intro</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={()=>{navigate('/k-movie')}}>국내 영화</Nav.Link>
-            <Nav.Link onClick={()=>{navigate('/f-movie')}}>해외 영화</Nav.Link>
+            <Nav.Link onClick={()=>{navigate('/movie')}}>영화</Nav.Link>
             <Nav.Link onClick={()=>{navigate('/ani')}}>애니메이션</Nav.Link>
             
           </Nav>
@@ -38,8 +36,9 @@ function App() {
               placeholder="검색어를 입력하세요"
               className="me-2"
               aria-label="Search"
+              style={{backgroundColor:'black',borderColor:'gray'}}
             />
-            <Button style={{backgroundColor:'black'}}>Search</Button>
+            <Button style={{backgroundColor:'rgb(22, 33, 62)',borderColor:'gray'}}>Search</Button>
           </Form>
       </Container>
     </Navbar>
@@ -102,30 +101,13 @@ function App() {
 
 
           <Route path='/movieInfo/:id' element={<MovieInfo   movies={movies} />} />
-          <Route path='/k-movie' element={<K_Movie></K_Movie>}></Route>
-            <Route path='FC' element={<div>코미디</div>}></Route>
-            <Route path='SA' element={<div>코미디</div>}></Route>
-            <Route path='HS' element={<div>코미디</div>}></Route>
-            <Route path='Rom' element={<div>코미디</div>}></Route>
-          <Route path='/f-movie'  element={<F_Movie></F_Movie>}></Route>
-            <Route path='FC'></Route>
-            <Route path='SA'></Route>
-            <Route path='HS'></Route>
-            <Route path='Rom'></Route>
+          <Route path='/movie' element={<K_Movie></K_Movie>}></Route>
           <Route path='/ani'  element={<Ani></Ani>}></Route>
-            <Route path='KF'></Route>
-            <Route path='SA'></Route>
-            <Route path='Com'></Route>
-            <Route path='Rom'></Route>
-            {/* 나중에 탭으로 바꾸기 */}
+
 
           <Route path='*' element={<div>404 Not Found</div>} />
         </Routes>
- 
-    
 
-
-   
     {/* Routes */}
     
     
