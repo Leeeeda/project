@@ -21,7 +21,7 @@ function MovieCard3({movies,id}){
         <Card class='card' key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
         navigate('/movieInfo/'+ movies[34].id)
         }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[0].imgPath}/>
+    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[34].imgPath}/>
     <div class="intro">
     <Card.Title>{movies[34].itemName}</Card.Title>
     <Card.Text>{movies[34].contentP}</Card.Text>
@@ -91,7 +91,7 @@ function MovieCard3({movies,id}){
     </Card>
     
     <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[7].id)
+        navigate('/movieInfo/'+ movies[41].id)
         }} >
     <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[41].imgPath}/>
     <div class="intro">
@@ -103,7 +103,7 @@ function MovieCard3({movies,id}){
 
     <Carousel.Item>
     <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[8].id)
+        navigate('/movieInfo/'+ movies[43].id)
         }} >
     <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[42].imgPath}/>
     <div class="intro">
@@ -113,7 +113,7 @@ function MovieCard3({movies,id}){
     </Card>
     
     <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[9].id)
+        navigate('/movieInfo/'+ movies[43].id)
         }} >
     <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[43].imgPath}/>
     <div class="intro">
@@ -125,7 +125,7 @@ function MovieCard3({movies,id}){
     <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
         navigate('/movieInfo/'+ movies[44].id)
         }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[10].imgPath}/>
+    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[44].imgPath}/>
     <div class="intro">
     <Card.Title>{movies[44].itemName}</Card.Title>
     <Card.Text>{movies[44].contentP}</Card.Text>
@@ -133,7 +133,7 @@ function MovieCard3({movies,id}){
     </Card>
     
     <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[11].id)
+        navigate('/movieInfo/'+ movies[45].id)
         }} >
     <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[45].imgPath}/>
     <div class="intro">

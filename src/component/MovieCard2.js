@@ -127,12 +127,12 @@ function MovieCard2({movies,id}){
     </Card>
     
     <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[34].id)
+        navigate('/movieInfo/'+ movies[33].id)
         }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[34].imgPath}/>
+    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[33].imgPath}/>
     <div class="intro">
-    <Card.Title>{movies[34].itemName}</Card.Title>
-    <Card.Text>{movies[34].contentP}</Card.Text>
+    <Card.Title>{movies[33].itemName}</Card.Title>
+    <Card.Text>{movies[3].contentP}</Card.Text>
     </div>
     </Card>
     </Carousel.Item>

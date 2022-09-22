@@ -5,7 +5,7 @@ import {useState} from 'react';
 import {Route, Routes,useNavigate,Link} from 'react-router-dom';
 import MovieCard1 from './component/MovieCard.js';
 import MovieInfo from './component/MovieInfo.js';
-import K_Movie from './component/K-movie';
+import Movie from './component/movie';
 import Ani from './component/Ani';
 import movieData from './component/MovieData.js';
 import MovieCard2 from './component/MovieCard2';
@@ -101,7 +101,7 @@ function App() {
 
 
           <Route path='/movieInfo/:id' element={<MovieInfo   movies={movies} />} />
-          <Route path='/movie' element={<K_Movie></K_Movie>}></Route>
+          <Route path='/movie' element={<Movie></Movie>}></Route>
           <Route path='/ani'  element={<Ani></Ani>}></Route>
 
 

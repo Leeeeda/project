@@ -1,5 +1,5 @@
 import {Card,ListGroup,Ratio,CloseButton,Button} from 'react-bootstrap'
-import {useParams, useNavigate} from 'react-router-dom'
+import {useParams, useNavigate, Link} from 'react-router-dom'
 import {useState} from 'react'
 import MovieData from './MovieData.js'
 
@@ -27,10 +27,7 @@ function MovieInfo({movies}){
     
     </Ratio>
     <br/>
-    <Button variant="success">보러 가기</Button>{' '}
-    <Ratio style={{width:'40px'}}>
-    <Button></Button>
-    </Ratio>
+    
     <Card.Body>
         <Card.Title style={{color:'white', fontWeight:'bold'}}>{movieInfo.itemName}</Card.Title>
         <Card.Text style={{color:'white'}}>

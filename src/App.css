@@ -5,13 +5,8 @@
   height: 100%
 }
 
-//캐러셀 영역
-.carouselBanner{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  
-}
+
+/* 캐러셀 영역 */
 
 .carousel{
   position: relative;
@@ -20,29 +15,24 @@
 
 .carousel-control-next {
   width: 5%;
-  left: 98% ;
+  left: 96% ;
 }
 .carousel-control-prev-icon{
   position: absolute;
-  right: 100%;
+  right: 90%;
 }
 
-.nav-tabs{
-  
+.carouselBanner{
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.movieInfoPosition{
-  position: relative;
-  left:20%;
-  align-items: flex-start;
-  
-}
 .font-style{
   text-align: center;
   color: lightgray;
   font-size: 15px;
 }
-
+/* 카드 영역 */
 .card{
   margin: 15px;
   border: 0px;
@@ -101,9 +91,43 @@
   transform: scale(1.1);
 }
 
+/* 인포 영역 */
+.movieInfoPosition{
+  position: relative;
+  align-items: flex-start;
+  float: none;
+  
+}
+
+/* 탭 영역 */
+.nav-tabs{
+  border-color: rgb(83, 52, 131);
+  border-width: 1px;
+}
+.nav-tabs .nav-link{
+  background-color:rgb(22, 33, 62) ;
+  color: gray;
+  
+}
+
+.nav-tabs .nav-link.active{
+  background-color:rgb(22, 33, 62) ;
+  border-color: rgb(83, 52, 131);
+  border-width: 3px;
+  border-bottom: none;
+  color: rgb(197, 197, 197);
+}
+
+.tab-content{
+  position: relative;
+  left: 3%;
+  margin: 3%;
+  width: 86%;
+  
+}
 
 
-
+/* footer영역 */
 .footer{
   background-color: rgb(22, 33, 62);
   margin: 0;
