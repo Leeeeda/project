@@ -5,6 +5,12 @@
   height: 100%
 }
 
+.p {
+  clear: both;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 /* 캐러셀 영역 */
 
@@ -35,11 +41,12 @@
 /* 카드 영역 */
 .card{
   margin: 15px;
+  margin-bottom: 30px;
   border: 0px;
   padding: 0px;
   float: left;
   position: relative;
-  box-shadow: 5px 5px 20px rgb(15, 52, 96);
+  box-shadow: 5px 5px 20px rgb(1, 58, 128);
   overflow: hidden;
 }
 
@@ -57,7 +64,7 @@
 .card.title{
   margin: 10px;
   font-size: 40px;
-  font-weight:400;
+  font-weight:bold;
 }
 
 .card.text{
@@ -72,8 +79,8 @@
 }
 
 .card:hover .intro{
-  height: 100px;
-  bottom: 0rem;
+  height: 130px;
+  bottom: 0;
   background-color: black;
 }
 
@@ -120,9 +127,9 @@
 
 .tab-content{
   position: relative;
-  left: 3%;
+  left: 5%;
   margin: 3%;
-  width: 86%;
+  
   
 }
 

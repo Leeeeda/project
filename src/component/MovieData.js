@@ -223,7 +223,7 @@
       downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=88669',
       contentP : '감독: 구파도 출연: 가진동, 천옌시',
       contentS : "학교 대표 얼간이 커징텅과 친구들은 최고의 모범생 션자이를 좋아한다. 수업 도중 사고를 친 커징텅은 션자이의 특별 감시를 받게 되고 둘은 점점 가까워진다. 션자이에 대한 마음이 커진 커징텅은 자신만의 방식으로 고백을 하지만 션자이는 대답하지 않는다. 그렇게 15년이 지나고, 두 사람은 다시 만나게 되는데… 그 때 너도 나와 같은 마음이었을까?",
-      imgPath : 'https://movie-phinf.pstatic.net/20121204_164/1354603402996ixgxY_JPEG/movie_image.jpg?type=m203_290_2',
+      imgPath : 'https://movie-phinf.pstatic.net/20210402_284/1617324715447E4OMx_JPEG/movie_image.jpg?type=m203_290_2',
       videoPath :  <iframe width="771" height="434" src="https://www.youtube.com/embed/UoVceraQ-zI?autoplay=1&mute=1;" title="[그 시절, 우리가 좋아했던 소녀] 메인 예고편녀] 메인 예고편"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       },
       
@@ -447,6 +447,107 @@
     contentS : "한 번 꽂힌 것은 무조건 끝을 보는 행동파 ‘서도철’(황정민), 20년 경력의 승부사 ‘오팀장’(오달수), 위장 전문 홍일점 ‘미스봉’(장윤주), 육체파 ‘왕형사’(오대환), 막내 ‘윤형사’(김시후)까지 겁 없고, 못 잡는 것 없고, 봐 주는 것 없는 특수 강력사건 담당 광역수사대. 오랫동안 쫓던 대형 범죄를 해결한 후 숨을 돌리려는 찰나, 서도철은 재벌 3세 ‘조태오’(유아인)를 만나게 된다. 세상 무서울 것 없는 안하무인의 조태오와 언제나 그의 곁을 지키는 오른팔 ‘최상무’(유해진). 서도철은 의문의 사건을 쫓던 중 그들이 사건의 배후에 있음을 직감한다. 건들면 다친다는 충고에도 불구하고 포기하지 않는 서도철의 집념에 판은 걷잡을 수 없이 커져가고 조태오는 이를 비웃기라도 하듯 유유히 포위망을 빠져 나가는데… 베테랑 광역수사대 VS 유아독존 재벌 3세 2015년 여름, 자존심을 건 한판 대결이 시작된다!",
     imgPath : 'https://movie-phinf.pstatic.net/20150624_36/1435111707396c2PvM_JPEG/movie_image.jpg?type=m665_443_2',
     videoPath :  <iframe width="789" height="444" src="https://www.youtube.com/embed/hcKp68DtBb0?autoplay=1&mute=1;" title="'베테랑' 메인 예고편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    },
+
+    //애니매이션 추가
+    {
+      id: 'mv049',
+    itemName : '라푼젤',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=115977',
+    contentP : '감독: 네이슨 그레노, 바이론 하워드 출연:맨디 무어, 제커리 레비',
+    contentS : "올드보이도 못 견뎠을 장장18년을 탑 안에서만 지낸 끈기만점의 소녀 라푼젤. 어느 날 자신의 탑에 침입한 왕국 최고의 대도를 한방에 때려잡는다. 그리고 그를 협박해 꿈에도 그리던 집밖으로의 모험을 단행한다. 과잉보호 모친의 영향으로 세상을 험난한 곳으로만 상상하던 라푼젤. 그런 그녀 앞에 군기 빡 쎈 왕실 경비마 맥시머스의 추격, 라이더에게 복수의 칼날을 가는 스태빙턴 형제의 위협, 라푼젤의 가짜 엄마 고델의 무서운 음모 등이 얽히고 설켜 점점 흥미진진한 사건들이 터지기 시작한다. 그러나 세상물정 깜깜한 우리의 라푼젤은 자신 앞에 펼쳐진 스릴 넘치는 세상을 맘껏 즐기는데...",
+    imgPath : 'https://movie-phinf.pstatic.net/20170418_162/1492497182954jDK7m_JPEG/movie_image.jpg?type=m203_290_2',
+    videoPath : <iframe width="789" height="444" src="https://www.youtube.com/embed/QMSv28VwWwY?autoplay=1&mute=1;" title="[라푼젤] 세상을 향한 라푼젤의 위대한 첫 걸음! When Will My Life Begin? (Reprise 2) | 디즈니 OST" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    }
+    ,
+    {
+      id: 'mv050',
+    itemName : '겨울왕국',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=100931',
+    contentP : '감독: 크리스 벅, 제니퍼 리 출연:크리스틴 벨, 이디나 멘젤',
+    contentS : "얼어붙은 세상을 녹일 자매가 온다! 서로가 최고의 친구였던 자매 ‘엘사’와 ‘안나’. 하지만 언니 ‘엘사’에게는 하나뿐인 동생에게조차 말 못할 비밀이 있다. 모든 것을 얼려버리는 신비로운 힘이 바로 그것. ‘엘사’는 통제할 수 없는 자신의 힘이 두려워 왕국을 떠나고, 얼어버린 왕국의 저주를 풀기 위해 ‘안나’는 언니를 찾아 환상적인 여정을 떠나는데……",
+    imgPath : 'https://movie-phinf.pstatic.net/20130924_70/1379992323873K78SM_JPEG/movie_image.jpg?type=m665_443_2',
+    videoPath :  <iframe width="789" height="444" src="https://www.youtube.com/embed/bbh1NIpDo-c?autoplay=1&mute=1;" title="[겨울왕국]메인 예고편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    }
+    ,
+    {
+      id: 'mv051',
+    itemName : '겨울왕국2',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=136873',
+    contentP : '감독: 크리스 벅, 제니퍼 리 출연:크리스틴 벨, 이디나 멘젤',
+    contentS : "내 마법의 힘은 어디서 왔을까? 나를 부르는 저 목소리는 누구지? 어느 날 부턴가 의문의 목소리가 엘사를 부르고, 평화로운 아렌델 왕국을 위협한다. 트롤은 모든 것은 과거에서 시작되었음을 알려주며 엘사의 힘의 비밀과 진실을 찾아 떠나야한다고 조언한다. 위험에 빠진 아렌델 왕국을 구해야만 하는 엘사와 안나는 숨겨진 과거의 진실을 찾아 크리스토프, 올라프 그리고 스벤과 함께 위험천만한 놀라운 모험을 떠나게 된다. 자신의 힘을 두려워했던 엘사는 이제 이 모험을 헤쳐나가기에 자신의 힘이 충분하다고 믿어야만 하는데… 두려움을 깨고 새로운 운명을 만나다!",
+    imgPath : 'https://movie-phinf.pstatic.net/20191121_221/1574298335357mqgLk_JPEG/movie_image.jpg?type=m665_443_2',
+    videoPath :  <iframe width="789" height="444" src="https://www.youtube.com/embed/eSEs4B4H-EA?autoplay=1&mute=1;" title="[공식] 겨울왕국 2 메인 예고편 최초공개 | 디즈니" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    }
+    ,
+    {
+      id: 'mv052',
+    itemName : '인사이드아웃',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=115622',
+    contentP : '감독: 피트 닥터 출연:에이미 포엘러, 필리스 스미스',
+    contentS : "“괜찮아, 다 잘 될 거야! 우리가 행복하게 만들어 줄게” 모든 사람의 머릿속에 존재하는 감정 컨트롤 본부 그곳에서 불철주야 열심히 일하는 기쁨, 슬픔, 버럭, 까칠, 소심 다섯 감정들. 이사 후 새로운 환경에 적응해야 하는 ‘라일리’를 위해 그 어느 때 보다 바쁘게 감정의 신호를 보내지만 우연한 실수로 ‘기쁨’과 ‘슬픔’이 본부를 이탈하게 되자 '라일리’의 마음 속에 큰 변화가 찾아온다. '라일리'가 예전의 모습을 되찾기 위해서는 ‘기쁨’과 ‘슬픔’이 본부로 돌아가야만 한다! 그러나 엄청난 기억들이 저장되어 있는 머릿속 세계에서 본부까지 가는 길은 험난하기만 한데… 과연, ‘라일리’는 다시 행복해질 수 있을까? 지금 당신의 머릿속에서 벌어지는 놀라운 일! 하루에도 몇번씩 변하는 감정의 비밀이 밝혀진다!",
+    imgPath : 'https://movie-phinf.pstatic.net/20141007_183/1412651633401uJHma_JPEG/movie_image.jpg?type=m665_443_2',
+    videoPath :  <iframe width="789" height="444" src="https://www.youtube.com/embed/1KGZtWbZtq8?autoplay=1&mute=1;" title="[인사이드 아웃] 메인 예고편 공개!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    }
+    ,
+    {
+      id: 'mv053',
+    itemName : '스폰지밥 무비: 핑핑이 구출 대작전',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=115977',
+    contentP : '감독: 팀 힐 출연:톰 케니, 빌 페이거바케, 로저 범패스',
+    contentS : "우리 핑핑이가 어디로 갔을까? 설마, 납치당한 건가? 사랑하는 반려 달팽이를 찾아 떠나는 스폰지밥. 뚱이도 함께 가야지. 비키니 시티를 벗어나 미지의 세계로, 출발이다!",
+    imgPath : 'https://movie-phinf.pstatic.net/20200316_130/1584342884242BDAAg_JPEG/movie_image.jpg?type=m665_443_2',
+    videoPath :  <iframe width="789" height="444" src="https://www.youtube.com/embed/miKuy0POV_g?autoplay=1&mute=1;" title="스폰지밥 무비: 핑핑이 구출 대작전 (The SpongeBob Movie: Sponge on the Run, 2020) 예고편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    }
+    ,
+    {
+      id: 'mv054',
+    itemName : '주토피아',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=115977',
+    contentP : '감독: 바이론 하워드, 리치 무어 출연:지니퍼 굿윈, 제이슨 베이트먼',
+    contentS : "누구나 살고 싶은 도시 1위, 주토피아 연쇄 실종 사건 발생! “미치도록 잡고 싶었다!” 교양 있고 세련된 라이프 스타일을 주도하는 도시 주토피아. 이 곳을 단숨에 혼란에 빠트린 연쇄 실종사건이 발생한다! 주토피아 최초의 토끼 경찰관 주디 홉스는 48시간 안에 사건 해결을 지시 받자 뻔뻔한 사기꾼 여우 닉 와일드에게 협동 수사를 제안하는데… 스릴 넘치는 추격전의 신세계가 열린다!",
+    imgPath : 'https://movie-phinf.pstatic.net/20160115_64/14528244833195m0As_JPEG/movie_image.jpg?type=m665_443_2',
+    videoPath :  <iframe width="789" height="444" src="https://www.youtube.com/embed/RGucZx3TUnc?autoplay=1&mute=1;" title="[주토피아] 메인 예고편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    }
+    ,
+    {
+      id: 'mv055',
+    itemName : '극장판 귀멸의 칼날: 무한열차편',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=196051',
+    contentP : '감독: 소토자키 하루오 출연:이경태, 김연우, 김지율',
+    contentS : "혈귀로 변한 여동생 ‘네즈코’를 되돌리기 위해 귀살대가 된 ‘탄지로’! 어둠 속을 달리는 무한열차에서 승객들이 흔적 없이 사라진다는 소식에 ‘젠이츠’, ‘이노스케’와 함께 임무 수행을 위해 무한열차에 탑승한다. 그리고 그 곳에서 만난 귀살대 최강 검사 염주 ‘렌고쿠’! 이들은 무한열차에 숨어 있는 혈귀의 존재를 직감하고 모두를 구하기 위해 목숨을 건 혈전을 시작하는데… 그 칼로 악몽을 끊어라!",
+    imgPath : 'https://movie-phinf.pstatic.net/20210126_174/1611638248803840HH_JPEG/movie_image.jpg?type=m665_443_2',
+    videoPath :  <iframe width="788" height="440" src="https://www.youtube.com/embed/5EXgtz_seFA?autoplay=1&mute=1;" title="[한글자막] 귀멸의칼날 무한열차편 4차 PV 예고편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    }
+    ,
+    {
+      id: 'mv056',
+    itemName : '뽀로로 극장판 보물섬 대모험',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=183136',
+    contentP : '감독: 김현호, 윤창섭 출연: 이선, 이미자, 김현지',
+    contentS : "떠나자, 보물섬으로~! 뽀로로와 친구들의 스펙터클 보물찾기 어드벤처! 전설 속 보물을 찾아 떠난 뽀로로와 친구들은 우연히 손에 넣은 지도를 따라 신비의 보물섬에 도착한다. 그곳에서 사라진 실버 선장을 만나 비밀을 간직한 보물섬의 수수께끼를 풀어내지만, 악당 블랙 선장과 보물섬의 괴물로 인해 위기에 빠지는데... 과연 뽀로로와 친구들은 전설의 보물을 찾을 수 있을까?",
+    imgPath : 'https://movie-phinf.pstatic.net/20190226_69/1551142062990twCNR_JPEG/movie_image.jpg?type=m665_443_2',
+    videoPath :  <iframe width="788" height="443" src="https://www.youtube.com/embed/bnfPhygWWCo?autoplay=1&mute=1;" title="뽀로로 영화 | 뽀로로 보물섬 대모험 뮤직비디오 | 극장에서 만나요!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    }
+    ,
+    {
+      id: 'mv057',
+    itemName : '니모를 찾아서 3D',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=32116',
+    contentP : '감독: 앤드류 스탠튼 출연:앨버트 브룩스, 앨런 드제너러스',
+    contentS : " 호기심 가득한 아기 물고기 ‘니모’가 인간에게 납치되자 아들바보 아빠 ‘말린’은 상상초월 위험이 도사리고 있는 바다로 아들을 구하기 위한 모험을 떠난다. 건망증이 심한 수다쟁이 물고기 ‘도리’와 함께 떠나는 모험에서 ‘말린’은 과연 아들을 구해낼 수 있을까? 전 세계가 사랑한 최고의 모험이 3D로 펼쳐진다!",
+    imgPath : 'https://movie-phinf.pstatic.net/20111222_94/1324535445053vye7h_JPEG/movie_image.jpg?type=m665_443_2',
+    videoPath :  <iframe width="789" height="579" src="https://www.youtube.com/embed/ul7wcneBjOI?autoplay=1&mute=1;" title="니모를 찾아서 3D_예고편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    }
+    ,
+    {
+      id: 'mv058',
+    itemName : '코렐라인: 비밀의 문',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=115977',
+    contentP : '감독: 헨리 셀릭 출연:다코타 패닝, 테리 해처, 제니퍼 손더스',
+    contentS : "새로운 집으로 이사해 모든 것이 낯선 코렐라인은 부모님도 일 때문에 바쁘자, 혼자 집안을 돌아다니던 중 숨겨진 작은 문을 발견한다. 그날 밤 우연히 문을 열어 본 코렐라인은 그 문을 통해 또 다른 세계로 가게 되고, 상상으로만 생각하던 모든 것이 다 실현되는 또 다른 세계에 점점 마음을 뺏기게 된다. 이 곳에는 단추 눈을 한 가족, 친구, 이웃 등 모든 사람이 자신의 말을 들어주는, 신나고 완벽한 세상인 것. 그러나 이 곳에 머물기 위해 필요한 무시무시하고 엄청난 비밀을 알게 된 코렐라인은 현실의 세계로 돌아가려 하지만, 또 다른 세계의 엄마는 이를 막기 위해 본색을 드러낸다. 과연 코렐라인은 현실의 세계로 무사히 돌아갈 수 있을까?",
+    imgPath : 'https://movie-phinf.pstatic.net/20111223_172/1324585237584YdEtP_JPEG/movie_image.jpg?type=m665_443_2',
+    videoPath :  <iframe width="789" height="427" src="https://www.youtube.com/embed/m9bOpeuvNwY?autoplay=1&mute=1;" title="Coraline (2009) Official Trailer - Dakota Fanning, Teri Hatcher Movie HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     }
 
   ];
