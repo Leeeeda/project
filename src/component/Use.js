@@ -2,7 +2,7 @@ function Use(){
     
     
     return(
-    <div style={{color:'white', fontSize:'18px'}}>
+    <div style={{color:'white', fontSize:'18px' ,margin:'20px'}}>
         <br/>
 <h3><strong>Movie Intro 이용약관</strong></h3>
 <br/>

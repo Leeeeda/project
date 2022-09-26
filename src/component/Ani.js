@@ -10,7 +10,7 @@ function Ani (){
     let [comedi2, setComedi2] = useState([27,55,51,29,28]);
     let [comedi3, setComedi3] = useState([26,30,57,32,53]);
     let [comedi4, setComedi4] = useState([32,56,54,50,26]);
-    let [theatrical1, setTheatrical1] = useState([25,30,31,32,52,24,54,55]);
+    let [theatrical1, setTheatrical1] = useState([25,30,31,32,52,24,54,55,33,49]);
     let [theatrical2, setTheatrical2] = useState([56,31,55,53,30]);
     let [theatrical3, setTheatrical3] = useState([32,30,50,54,55]);
     let [theatrical4, setTheatrical4] = useState([31,32,30,54,25]);

@@ -23,7 +23,9 @@ function MovieCard1({movies,id}){
         <Carousel.Item>
         {best.map((data)=>{
             return(
-                <Card  key={movies[data].id} onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
+                <Card  key={movies[data].id} 
+                onClick={()=>{navigate('/movieInfo/'+ movies[data].id);
+                }}>
         <Card.Img variant="top" src= {movies[data].imgPath}/>
         <div class="intro">
         <Card.Title>{movies[data].itemName}</Card.Title>

@@ -43,7 +43,7 @@
       {
         id: 'mv005',
       itemName : '극한직업',
-      downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=91073',
+      downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=167651',
       contentP : '감독: 이병헌 출연: 류승룡, 이하늬, 진선규',
       contentS : "낮에는 치킨장사! 밤에는 잠복근무! 지금까지 이런 수사는 없었다!마약반은 24시간 감시를 위해 범죄조직의 아지트 앞 치킨집을 인수해 위장 창업을 하게 되고, 뜻밖의 절대미각을 지닌 마형사의 숨은 재능으로 치킨집은 일약 맛집으로 입소문이 나기 시작한다. 수사는 뒷전, 치킨장사로 눈코 뜰 새 없이 바빠진 마약반에게 어느 날 절호의 기회가 찾아오는데… 범인을 잡을 것인가, 닭을 잡을 것인가!",
       imgPath : 'https://movie-phinf.pstatic.net/20190116_206/1547615429111dINWj_JPEG/movie_image.jpg?type=m203_290_2',
@@ -52,7 +52,7 @@
       {
         id: 'mv006',
       itemName : '박수건달',
-      downloadLink : 'https://serieson.naver.com/v2/movie/320877',
+      downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=91073',
       contentP : '감독: 조진규 출연: 박신양, 김정태, 엄지원',
       contentS : "건달로 사느냐, 무당으로 사느냐 그것이 문제로다! 보스에게 신임 받고, 동생들에게 사랑 받는 엘리트 건달 광호(박신양). 남 부러울 것 없이 승승장구 하던 그의 건달 인생에 ‘그 분’이 태클을 걸었다?! 호시탐탐 광호를 밟을 기회만 노리던 태주(김정태)의 칼에 맞고 순식간에 바뀐 운명선 때문에 낮에는 박수무당, 밤에는 건달의 투잡족이 되어버린 광호! 하지만 존경하는 보스 가라사대, 쪽 팔리면 건달 아니라 안카나!",
       imgPath : 'https://movie-phinf.pstatic.net/20121204_164/1354603402996ixgxY_JPEG/movie_image.jpg?type=m203_290_2',
@@ -387,7 +387,7 @@
     {
       id: 'mv042',
     itemName : '신세계',
-    downloadLink : 'https://movie.naver.com/movie/bi/mi/photoView.naver?code=92075',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=91031',
     contentP : '감독: 박훈정 출연: 이정재, 최민식, 황정민',
     contentS : "세 남자가 가고 싶었던 서로 다른 신세계",
     imgPath : 'https://movie-phinf.pstatic.net/20130206_29/13601146693401seof_JPEG/movie_image.jpg?type=m203_290_2',
@@ -453,7 +453,7 @@
     {
       id: 'mv049',
     itemName : '라푼젤',
-    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=115977',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=75470',
     contentP : '감독: 네이슨 그레노, 바이론 하워드 출연:맨디 무어, 제커리 레비',
     contentS : "올드보이도 못 견뎠을 장장18년을 탑 안에서만 지낸 끈기만점의 소녀 라푼젤. 어느 날 자신의 탑에 침입한 왕국 최고의 대도를 한방에 때려잡는다. 그리고 그를 협박해 꿈에도 그리던 집밖으로의 모험을 단행한다. 과잉보호 모친의 영향으로 세상을 험난한 곳으로만 상상하던 라푼젤. 그런 그녀 앞에 군기 빡 쎈 왕실 경비마 맥시머스의 추격, 라이더에게 복수의 칼날을 가는 스태빙턴 형제의 위협, 라푼젤의 가짜 엄마 고델의 무서운 음모 등이 얽히고 설켜 점점 흥미진진한 사건들이 터지기 시작한다. 그러나 세상물정 깜깜한 우리의 라푼젤은 자신 앞에 펼쳐진 스릴 넘치는 세상을 맘껏 즐기는데...",
     imgPath : 'https://movie-phinf.pstatic.net/20170418_162/1492497182954jDK7m_JPEG/movie_image.jpg?type=m203_290_2',
@@ -493,7 +493,7 @@
     {
       id: 'mv053',
     itemName : '스폰지밥 무비: 핑핑이 구출 대작전',
-    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=115977',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=193570',
     contentP : '감독: 팀 힐 출연:톰 케니, 빌 페이거바케, 로저 범패스',
     contentS : "우리 핑핑이가 어디로 갔을까? 설마, 납치당한 건가? 사랑하는 반려 달팽이를 찾아 떠나는 스폰지밥. 뚱이도 함께 가야지. 비키니 시티를 벗어나 미지의 세계로, 출발이다!",
     imgPath : 'https://movie-phinf.pstatic.net/20200316_130/1584342884242BDAAg_JPEG/movie_image.jpg?type=m665_443_2',
@@ -503,7 +503,7 @@
     {
       id: 'mv054',
     itemName : '주토피아',
-    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=115977',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=130850',
     contentP : '감독: 바이론 하워드, 리치 무어 출연:지니퍼 굿윈, 제이슨 베이트먼',
     contentS : "누구나 살고 싶은 도시 1위, 주토피아 연쇄 실종 사건 발생! “미치도록 잡고 싶었다!” 교양 있고 세련된 라이프 스타일을 주도하는 도시 주토피아. 이 곳을 단숨에 혼란에 빠트린 연쇄 실종사건이 발생한다! 주토피아 최초의 토끼 경찰관 주디 홉스는 48시간 안에 사건 해결을 지시 받자 뻔뻔한 사기꾼 여우 닉 와일드에게 협동 수사를 제안하는데… 스릴 넘치는 추격전의 신세계가 열린다!",
     imgPath : 'https://movie-phinf.pstatic.net/20160115_64/14528244833195m0As_JPEG/movie_image.jpg?type=m665_443_2',
@@ -543,7 +543,7 @@
     {
       id: 'mv058',
     itemName : '코렐라인: 비밀의 문',
-    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=115977',
+    downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=67696',
     contentP : '감독: 헨리 셀릭 출연:다코타 패닝, 테리 해처, 제니퍼 손더스',
     contentS : "새로운 집으로 이사해 모든 것이 낯선 코렐라인은 부모님도 일 때문에 바쁘자, 혼자 집안을 돌아다니던 중 숨겨진 작은 문을 발견한다. 그날 밤 우연히 문을 열어 본 코렐라인은 그 문을 통해 또 다른 세계로 가게 되고, 상상으로만 생각하던 모든 것이 다 실현되는 또 다른 세계에 점점 마음을 뺏기게 된다. 이 곳에는 단추 눈을 한 가족, 친구, 이웃 등 모든 사람이 자신의 말을 들어주는, 신나고 완벽한 세상인 것. 그러나 이 곳에 머물기 위해 필요한 무시무시하고 엄청난 비밀을 알게 된 코렐라인은 현실의 세계로 돌아가려 하지만, 또 다른 세계의 엄마는 이를 막기 위해 본색을 드러낸다. 과연 코렐라인은 현실의 세계로 무사히 돌아갈 수 있을까?",
     imgPath : 'https://movie-phinf.pstatic.net/20111223_172/1324585237584YdEtP_JPEG/movie_image.jpg?type=m665_443_2',

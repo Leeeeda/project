@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import {Nav, Navbar,Container,Button,Form,Carousel,Row,Col,Card} from 'react-bootstrap';
-import {useState} from 'react';
-import {Route, Routes,useNavigate,Link} from 'react-router-dom';
+import {useState , useEffect} from 'react';
+import {Route, Routes,useNavigate,Link,useLocation} from 'react-router-dom';
 import MovieCard1 from './component/MovieCard.js';
 import MovieInfo from './component/MovieInfo.js';
 import Movie from './component/movie';
@@ -18,6 +18,12 @@ import Enquiry from './component/Enquiry';
 function App() {
   let navigate = useNavigate();
   let [movies, setMovies] = useState(movieData);
+  const{pathname} = useLocation();
+
+    useEffect(()=>{
+      window.scrollTo(0,0);
+    },[pathname])
+  
   
   return (
   <div className='main'>
@@ -45,9 +51,12 @@ function App() {
           </Form>
       </Container>
     </Navbar>
-<Routes>
-          <Route path='/' element={<div className='carouselBanner'>
-             
+
+
+        <Routes>
+          <Route path='/' element={
+          
+          <div className='carouselBanner'>
              {/* 배너 부분 */}
     <Carousel  className='carouselBanner' fade>
       <Carousel.Item onClick={()=>{navigate('/movieInfo/mv001')}}>

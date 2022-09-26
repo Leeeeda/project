@@ -1,6 +1,7 @@
 import {Tabs, Tab,Accordion,Form,Button} from 'react-bootstrap'
 
 function Customer() {
+    
     return (
         <Tabs
             id="controlled-tab-example"
@@ -8,7 +9,7 @@ function Customer() {
         >
             <Tab eventKey="notice" title="공지사항">
             
-    <Accordion  flush>
+    <Accordion style={{topMargin:'20px',width:'900px'}} flush>
     <Accordion.Item eventKey="0">
         <Accordion.Header>영화 신규 업데이트 22.09.26</Accordion.Header>
         <Accordion.Body>
@@ -76,14 +77,14 @@ function Customer() {
         이용자는 본 동의를 거부할 수 있으나, 미동의 시 문의 접수가 불가능 합니다.
         <br/>
         <br/>
-        <Button as="input" type="submit" style={{backgroundColor:'rgb(83, 52, 131)'}} value="제출하기" />
+        <Button as="input" type="submit" style={{backgroundColor:'rgb(83, 52, 131)',borderColor:'rgb(83, 52, 131)'}} value="제출하기" />
             </Form>
             </Tab>
 
 
 
             <Tab eventKey="help" title="문의하기">
-            <Form style={{color:'white'}}>
+            <Form style={{color:'white'}} className='formPosition'> 
             <p className='p'>서비스에 제안하실 의견을 접수해 주세요</p>
             <br/>
             제안주신 내용에 대해 별도의 결과를 안내해 드리지 않습니다.
@@ -113,7 +114,7 @@ function Customer() {
         이용자는 본 동의를 거부할 수 있으나, 미동의 시 문의 접수가 불가능 합니다.
         <br/>
         <br/>
-        <Button as="input" type="submit" style={{backgroundColor:'rgb(83, 52, 131)'}}  value="제출하기" />{' '}
+        <Button as="input" type="submit" style={{backgroundColor:'rgb(83, 52, 131)',borderColor:'rgb(83, 52, 131)'}}  value="제출하기" />{' '}
             </Form>
             </Tab>
         </Tabs>
