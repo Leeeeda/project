@@ -131,6 +131,8 @@ function Enquiry(){
             2) 초기 등록 시 고화질 영상으로 등록하실 것을 권장하며, 1920x1080 사이즈의 파일을 첨부
             <br/>
             <br/>
+            <br/>
+            
             </Accordion.Body>
         </Accordion.Item>
         </Accordion>
