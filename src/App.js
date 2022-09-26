@@ -10,6 +10,9 @@ import Ani from './component/Ani';
 import movieData from './component/MovieData.js';
 import MovieCard2 from './component/MovieCard2';
 import MovieCard3 from './component/MovieCard3';
+import Customer from './component/Customer';
+import Use from './component/Use'
+import Enquiry from './component/Enquiry';
 
 
 function App() {
@@ -44,6 +47,7 @@ function App() {
     </Navbar>
 <Routes>
           <Route path='/' element={<div className='carouselBanner'>
+             
              {/* 배너 부분 */}
     <Carousel  className='carouselBanner' fade>
       <Carousel.Item onClick={()=>{navigate('/movieInfo/mv001')}}>
@@ -104,6 +108,9 @@ function App() {
           <Route path='/movie' element={<Movie></Movie>}></Route>
           <Route path='/ani'  element={<Ani></Ani>}></Route>
 
+          <Route path='/customer_service' element={<Customer></Customer>}></Route>
+          <Route path='/use' element={<Use></Use>}></Route>
+          <Route path='/enquiry' element={<Enquiry></Enquiry>}></Route>
 
           <Route path='*' element={<div>404 Not Found</div>} />
         </Routes>
@@ -116,18 +123,16 @@ function App() {
   <br/>
     <Nav className="justify-content-center" activeKey="/home">
         <Nav.Item>
-          <Nav.Link href="/home">전체 페이지</Nav.Link>
+          <Nav.Link href="/">전체 페이지</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-1">고객센터</Nav.Link>
+          <Nav.Link href='/customer_service'>고객센터</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-2">개인정보처리방침</Nav.Link>
+          <Nav.Link href='/use'>이용약관</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="disabled" disabled>
-            Disabled
-          </Nav.Link>
+          <Nav.Link href='/enquiry'>문의사항</Nav.Link>
         </Nav.Item>
         </Nav>
         <br/>

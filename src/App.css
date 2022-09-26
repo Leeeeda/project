@@ -22,11 +22,11 @@
 
 .carousel-control-next {
   width: 50px;
-  left:  1100px;
+  left:  96%;
 }
 .carousel-control-prev-icon{
   position: absolute;
-  right: 90%;
+  right: 86%;
 }
 
 .carouselBanner{
@@ -52,7 +52,7 @@
   padding: 0px;
   float: left;
   position: relative;
-  left: 20px;
+  left: 3px;
   box-shadow: 5px 5px 20px rgb(1, 58, 128);
   overflow: hidden;
   background-color: rgb(22, 33, 62);
@@ -157,6 +157,10 @@
     left: 4%;
   }
 
+  .carousel-control-next {
+    width: 60px;
+    left: 95% ;
+  }
 }
 
 @media only screen and ( max-width:991px ){
@@ -205,6 +209,18 @@
 .footer{
   background-color: rgb(22, 33, 62);
   margin: 0;
-  height: 300px;
+  height: 400px;
   clear: both;
+}
+
+.accordion{
+  width: 90%;
+  margin: 50px;
+  
+}
+
+.accordion-button{
+  background-color: rgb(22, 33, 62); 
+  color: rgb(252, 252, 252);
+  
 }

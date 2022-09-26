@@ -8,7 +8,7 @@
     itemName : '공조2 : 인터네셔날',
     downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=201641',
     contentP : '감독: 이석훈 \n 출연 : 현빈,유해진,윤아',
-    contentS : "공조 이즈 백! 이번엔 삼각 공조다! 남한으로 숨어든 글로벌 범죄 조직을 잡기 위해 새로운 공조 수사에 투입된 북한 형사 ‘림철령’(현빈). 수사 중의 실수로 사이버수사대로 전출됐던 남한 형사 ‘강진태’(유해진)는 광수대 복귀를 위해 모두가 기피하는 ‘철령’의 파트너를 자청한다.",
+    contentS : "공조 이즈 백! 이번엔 삼각 공조다!남한으로 숨어든 글로벌 범죄 조직을 잡기 위해 새로운 공조 수사에 투입된 북한 형사 ‘림철령’(현빈). 수사 중의 실수로 사이버수사대로 전출됐던 남한 형사 ‘강진태’(유해진)는 광수대 복귀를 위해 모두가 기피하는 ‘철령’의 파트너를 자청한다.",
     imgPath : 'https://movie-phinf.pstatic.net/20220826_188/1661489945659Su2RI_JPEG/movie_image.jpg?type=m203_290_2',
     videoPath : <iframe width="789" height="444" src="https://www.youtube.com/embed/fzUKUfHeIYA?autoplay=1&mute=1;" title="3배 더 강력해진 하나의 팀! [공조2: 인터내셔날] 메인 예고편" frameborder="0" allow="accelerometer; autoplay=1&mute=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     },
