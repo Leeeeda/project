@@ -3,10 +3,12 @@ import {useNavigate} from 'react-router-dom';
 import {useState} from 'react'
 
 
-
+// 공포영화
 function MovieCard3({movies,id}){
     let navigate= useNavigate();
-    
+    let [horror,setHorror] = useState([34,35,36,37])
+    let [horror1,setHorror1] = useState([40,44,46,39])
+    let [horror2,setHorror2] = useState([43,45,41,57])
     return(
     //     <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
     //     navigate('/movieInfo/'+ movie.id)
@@ -18,129 +20,46 @@ function MovieCard3({movies,id}){
     <Carousel interval={null} indicators={false}>
 
         <Carousel.Item>
-        <Card class='card' key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[34].id)
-        }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[34].imgPath}/>
-    <div class="intro">
-    <Card.Title>{movies[34].itemName}</Card.Title>
-    <Card.Text>{movies[34].contentP}</Card.Text>
-    </div>
-    </Card>
-
-    <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[1].id)
-        }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[35].imgPath}/>
-    <div class="intro">
-    <Card.Title>{movies[35].itemName}</Card.Title>
-    <Card.Text>{movies[35].contentP}</Card.Text>
-    </div>
-    </Card>
-
-    <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[36].id)
-        }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[36].imgPath}/>
-    <div class="intro">
-    <Card.Title>{movies[36].itemName}</Card.Title>
-    <Card.Text>{movies[36].contentP}</Card.Text>
-    </div>
-    </Card>
+        {horror.map((data,i)=>{
+            return(
+            <Card class='card' key={movies[data].id}  
+                onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
+                <Card.Img  variant="top" src= {movies[data].imgPath}/>
+                <div class="intro">
+                <Card.Title>{movies[data].itemName}</Card.Title>
+                <Card.Text>{movies[data].contentP}</Card.Text>
+                </div>
+            </Card>
     
-    <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[37].id)
-        }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[3].imgPath}/>
-    <div class="intro">
-    <Card.Title>{movies[37].itemName}</Card.Title>
-    <Card.Text>{movies[37].contentP}</Card.Text>
-    </div>
-    </Card>
+        )})}  
     </Carousel.Item>
 
     <Carousel.Item>
-    <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[38].id)
-        }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[38].imgPath}/>
-    <div class="intro">
-    <Card.Title>{movies[38].itemName}</Card.Title>
-    <Card.Text>{movies[38].contentP}</Card.Text>
-    </div>
-    </Card>
-
-    <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[39].id)
-        }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[39].imgPath}/>
-    <div class="intro">
-    <Card.Title>{movies[39].itemName}</Card.Title>
-    <Card.Text>{movies[39].contentP}</Card.Text>
-    </div>
-    </Card>
-    
-    <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[40].id)
-        }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[40].imgPath}/>
-    <div class="intro">
-    <Card.Title>{movies[40].itemName}</Card.Title>
-    <Card.Text>{movies[40].contentP}</Card.Text>
-    </div>
-    </Card>
-    
-    <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[41].id)
-        }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[41].imgPath}/>
-    <div class="intro">
-    <Card.Title>{movies[41].itemName}</Card.Title>
-    <Card.Text>{movies[41].contentP}</Card.Text>
-    </div>
-    </Card>
+    {horror1.map((data,i)=>{
+            return(
+            <Card class='card' key={movies[data].id} 
+                onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
+                <Card.Img variant="top" src= {movies[data].imgPath}/>
+                <div class="intro">
+                <Card.Title>{movies[data].itemName}</Card.Title>
+                <Card.Text>{movies[data].contentP}</Card.Text>
+                </div>
+            </Card>
+            )})}
     </Carousel.Item>
 
     <Carousel.Item>
-    <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[43].id)
-        }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[42].imgPath}/>
-    <div class="intro">
-    <Card.Title>{movies[42].itemName}</Card.Title>
-    <Card.Text>{movies[42].contentP}</Card.Text>
-    </div>
-    </Card>
-    
-    <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[43].id)
-        }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[43].imgPath}/>
-    <div class="intro">
-    <Card.Title>{movies[43].itemName}</Card.Title>
-    <Card.Text>{movies[43].contentP}</Card.Text>
-    </div>
-    </Card>
-    
-    <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[44].id)
-        }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[44].imgPath}/>
-    <div class="intro">
-    <Card.Title>{movies[44].itemName}</Card.Title>
-    <Card.Text>{movies[44].contentP}</Card.Text>
-    </div>
-    </Card>
-    
-    <Card key={id} style={{ width: '15rem' ,height:'21.5rem' }}  onClick={()=>{
-        navigate('/movieInfo/'+ movies[45].id)
-        }} >
-    <Card.Img style={{width:'15rem' ,height:'344px'}} variant="top" src= {movies[45].imgPath}/>
-    <div class="intro">
-    <Card.Title>{movies[45].itemName}</Card.Title>
-    <Card.Text>{movies[45].contentP}</Card.Text>
-    </div>
-    </Card>
+    {horror2.map((data,i)=>{
+            return(
+            <Card class='card' key={movies[data].id}  
+                onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
+                <Card.Img  variant="top" src= {movies[data].imgPath}/>
+                <div class="intro">
+                <Card.Title>{movies[data].itemName}</Card.Title>
+                <Card.Text>{movies[data].contentP}</Card.Text>
+                </div>
+            </Card>
+            )})}
     </Carousel.Item>
     </Carousel> 
     )

@@ -54,7 +54,7 @@ function App() {
           alt="First slide"
         />
       </Carousel.Item>
-      <Carousel.Item onClick={()=>{navigate('/movieInfo/mv002')}}>
+      <Carousel.Item onClick={()=>{navigate('/movieInfo/mv009')}}>
         <img
           className="d-block w-100"
           src= 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20220721_170%2F1658386441523viz5t_JPEG%2Fmovie_image.jpg'
@@ -62,7 +62,7 @@ function App() {
           height='700px'
         />
       </Carousel.Item>
-      <Carousel.Item onClick={()=>{navigate('/movieInfo/mv008')}}>
+      <Carousel.Item onClick={()=>{navigate('/movieInfo/mv012')}}>
         <img
           className="d-block w-100"
           src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20220720_67%2F16582792149228F3Il_JPEG%2Fmovie_image.jpg"

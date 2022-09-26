@@ -1,7 +1,6 @@
 import {Card,ListGroup,Ratio,CloseButton,Button} from 'react-bootstrap'
 import {useParams, useNavigate, Link} from 'react-router-dom'
 import {useState} from 'react'
-import MovieData from './MovieData.js'
 
 
 function MovieInfo({movies}){
@@ -17,7 +16,7 @@ function MovieInfo({movies}){
     
     return (
     <div>    
-        <Card style={{ width: '60%', margin:'0 auto', backgroundColor:'rgb(15, 52, 96)'}} 
+        <Card 
         className='movieInfoPosition'>
 
     <CloseButton variant="white" onClick={()=>{navigate('/')}}></CloseButton>

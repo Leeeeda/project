@@ -17,11 +17,12 @@
 .carousel{
   position: relative;
   margin: 10px;
+  /* width:600px; */
 }
 
 .carousel-control-next {
-  width: 5%;
-  left: 96% ;
+  width: 50px;
+  left:  1100px;
 }
 .carousel-control-prev-icon{
   position: absolute;
@@ -29,9 +30,11 @@
 }
 
 .carouselBanner{
-  box-sizing: border-box;
+  width: 100%;
   margin: 0;
 }
+
+
 
 .font-style{
   text-align: center;
@@ -40,14 +43,24 @@
 }
 /* 카드 영역 */
 .card{
+  width: 15rem;
+  height:21.5rem;
+
   margin: 15px;
   margin-bottom: 30px;
   border: 0px;
   padding: 0px;
   float: left;
   position: relative;
+  left: 20px;
   box-shadow: 5px 5px 20px rgb(1, 58, 128);
   overflow: hidden;
+  background-color: rgb(22, 33, 62);
+}
+
+.card.img{
+  width:15rem ; 
+  height: 22.5rem;
 }
 
 .intro{
@@ -69,7 +82,7 @@
 
 .card.text{
   font-size: 16px;
-  margin: 20px;
+  margin: 16px;
   visibility: hidden;
   opacity: 0;
 }
@@ -103,7 +116,10 @@
   position: relative;
   align-items: flex-start;
   float: none;
-  
+  width: 60%;
+  height: 750px;
+  margin:0 auto;
+  background-color:rgb(15, 52, 96);
 }
 
 /* 탭 영역 */
@@ -133,6 +149,57 @@
   
 }
 
+@media only screen and ( max-width:1029px ){
+
+  .card{
+    width: 11rem;
+    height: 15.5rem;
+    left: 4%;
+  }
+
+}
+
+@media only screen and ( max-width:991px ){
+  .card{
+    width: 130px;
+    height: 11rem;
+  }
+  
+  .carousel-control-next {
+    width: 60px;
+    left: 100% ;
+  }
+  .carousel-control-prev-icon{
+    right: 90%;
+  }
+  .navbar .nav-link{
+    padding: 0;
+    
+
+  }
+}
+
+@media only screen and ( max-width:767px){
+  .card{
+    width: 11rem;
+    height: 16rem;
+  }
+  .carousel-control-next {
+    width: 60px;
+    left: 96% ;
+  }
+  .carousel-control-prev-icon{
+    position: absolute;
+    right: 90%;
+  }
+}
+
+@media only screen and (max-width:500px)
+{
+  .carousel{
+    width: 500px;
+  }
+}
 
 /* footer영역 */
 .footer{
