@@ -4,16 +4,14 @@ import {useState} from 'react'
 
 
 function MovieInfo({movies}){
-
     let {likeCnt, setLikeCnt}=useState(0);
-
     let {id} = useParams();
     let movieInfo = movies.find( (data, i) => {
         return data.id == id;
         });
-
     let navigate = useNavigate();
     
+
     return (
     <div>    
         <Card 
@@ -27,8 +25,12 @@ function MovieInfo({movies}){
     </Ratio>
     <br/>
     
+    <a  href={movieInfo.downloadLink} target='_blank'>
+        <Button as="input" type="button" value="보러가기" 
+        style={{backgroundColor:'rgb(83, 52, 131)',width:'840%', borderColor :'rgb(83, 52, 131)'}}/></a>
     <Card.Body>
-        <Card.Title style={{color:'white', fontWeight:'bold'}}>{movieInfo.itemName}</Card.Title>
+        <Card.Title style={{color:'white', fontWeight:'bold'}}>{movieInfo.itemName}
+        </Card.Title>
         <Card.Text style={{color:'white'}}>
             {movieInfo.contentP}
         </Card.Text>

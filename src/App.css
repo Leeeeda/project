@@ -150,13 +150,16 @@
 }
 
 @media only screen and ( max-width:1029px ){
-
+  
   .card{
     width: 11rem;
     height: 15.5rem;
     left: 4%;
   }
-
+.movieInfoPosition{
+    width: 60%;
+    height: 750px;
+  }
   .carousel-control-next {
     width: 60px;
     left: 95% ;
@@ -178,8 +181,10 @@
   }
   .navbar .nav-link{
     padding: 0;
-    
-
+  }
+  .movieInfoPosition{
+    width: 60%;
+    height: 750px;
   }
 }
 
@@ -195,6 +200,11 @@
   .carousel-control-prev-icon{
     position: absolute;
     right: 90%;
+  }
+
+  .movieInfoPosition{
+    width: 60%;
+    height: 750px;
   }
 }
 
