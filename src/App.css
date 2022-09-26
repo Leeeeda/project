@@ -209,7 +209,7 @@
 .footer{
   background-color: rgb(22, 33, 62);
   margin: 0;
-  height: 400px;
+  height: 600px;
   clear: both;
 }
 
@@ -223,4 +223,14 @@
   background-color: rgb(22, 33, 62); 
   color: rgb(252, 252, 252);
   
+}
+
+.accordion-button:not(.collapsed){
+  background-color:rgb(22, 33, 62);
+  color: lightgray;
+}
+
+.accordion-body{
+  background-color: rgb(15, 52, 96);
+  color: rgb(252, 252, 252);
 }
