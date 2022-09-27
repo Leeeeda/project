@@ -10,17 +10,28 @@ function Customer() {
             <Tab eventKey="notice" title="공지사항">
             
     <Accordion style={{topMargin:'20px',width:'900px'}} flush>
+        <Accordion.Item eventKey="4">
+        <Accordion.Header>애니메이션 컨텐츠 업데이트 22.09.25</Accordion.Header>
+        <Accordion.Body>
+        애니메이션 컨텐츠 업데이트
+        -주토피아 : 업데이트 완료 22.09.25
+        -극장판 귀멸의 칼날: 무한열차편 : 업데이트 완료 22.09.25
+        -뽀로로 극장판 보물섬 대모험 : 업데이트 완료 22.09.25
+        -니모를 찾아서 3D : 업데이트 완료 22.09.25
+        -코렐라인: 비밀의 문 : 업데이트 완료 22.09.25
+        </Accordion.Body>
+    </Accordion.Item>
     <Accordion.Item eventKey="0">
         <Accordion.Header>영화 신규 업데이트 22.09.26</Accordion.Header>
         <Accordion.Body>
         <br/>
-        -공조 : 업데이트 완료
+        -공조 : 업데이트 완료 22.09.26
         <br/>
         <br/>
-        -헌트 : 업데이트 완료
+        -헌트 : 업데이트 완료 22.09.26
         <br/>
         <br/>
-        -한산 : 업데이트 완료
+        -한산 : 업데이트 완료 22.09.26
         <br/>
         <br/>
         </Accordion.Body>
@@ -40,6 +51,16 @@ function Customer() {
             <br/>
             <br/>
             -극장판 짱구는 못말려: 수수께끼! 꽃피는 천하 떡잎 학교 : 22.09.28 개봉예정
+            <br/>
+            <br/>
+        </Accordion.Body>
+    </Accordion.Item>
+    <Accordion.Item eventKey="2">
+        <Accordion.Header>영화 소개 창화면 오류 해결 22.09.27</Accordion.Header>
+        <Accordion.Body>
+        <br/>
+            영화 소개 화면에서 보러가기 버튼이 동작 안하는 오류 해결
+
             <br/>
             <br/>
         </Accordion.Body>
@@ -69,7 +90,9 @@ function Customer() {
         <Form.Control as="textarea" rows={3} />
         </Form.Group>
         <br/>
+        <input type='checkbox'></input>
         개인정보 수집 동의
+        <br/>
         수집하는 개인정보 항목: 이메일 주소
         <br/>
         작성해 주시는 개인정보는 문의 접수 및 고객 불만 해결을 위해 3년간 보관됩니다.
@@ -106,7 +129,10 @@ function Customer() {
         <Form.Control as="textarea" rows={3} />
         </Form.Group>
         <br/>
+        
+        <input type='checkbox'></input>
         개인정보 수집 동의
+        <br/>
         수집하는 개인정보 항목: 이메일 주소
         <br/>
         작성해 주시는 개인정보는 문의 접수 및 고객 불만 해결을 위해 3년간 보관됩니다.

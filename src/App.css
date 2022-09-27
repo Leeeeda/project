@@ -141,12 +141,36 @@
   color: rgb(197, 197, 197);
 }
 
+
+/* tab 부분 수정피룡 */
 .tab-content{
   position: relative;
-  left: 5%;
-  margin: 3%;
-  
-  
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.tabCard{
+  width: 180px;
+  height: 230px;
+  margin: 18px;
+  float: left;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  box-shadow: 5px 5px 20px rgb(1, 58, 128);
+}
+
+.tabCard img{
+  width: 180px;
+  height: 230px;
+}
+
+.tabCard:hover{
+  cursor: pointer;
+}
+
+.tabCard:hover img{
+  transform: scale(1.1);
 }
 
 @media only screen and ( max-width:1029px ){
@@ -163,6 +187,19 @@
   .carousel-control-next {
     width: 60px;
     left: 95% ;
+  }
+  .tab-content{
+    right: 50px;
+    
+  }
+  .tabCard{
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+  }
+  .tabCard img{
+    width: 150px;
+    height: 200px;
   }
 }
 
@@ -186,6 +223,10 @@
     width: 700px;
     height: 850px;
   }
+  .tabCard img{
+    width: 130px;
+    height: 11rem;
+  }
 }
 
 @media only screen and ( max-width:767px){
@@ -205,6 +246,10 @@
   .movieInfoPosition{
     width: 700px;
     height: 850px;
+  }
+  .tabCard{
+    width: 130px;
+    height: 11rem;
   }
 }
 

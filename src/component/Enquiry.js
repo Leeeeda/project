@@ -26,7 +26,7 @@ function Enquiry(){
             <strong> 2. Chrome 브라우저 재설치</strong>
             <br/>
             <br/>
-            ▶ Chrome 설치 페이지 바로가기
+            <a href='https://www.google.com/intl/ko/chrome/' target='_blank'>▶ Chrome 설치 페이지 바로가기</a>
             <br/>
             <br/>
             Chrome 브라우저에서 동영상이 정상적으로 재생되나, Internet Explorer에서만 문제가 발생한다면, 기존 Internet Explorer를 제거한 후 재설치합니다.
@@ -34,7 +34,7 @@ function Enquiry(){
             안내된 내용으로 해결되지 않았다면, 아래 링크를 클릭해 문의 바랍니다.
             <br/>
             <br/>
-            ▶ 문의 접수 바로가기
+            <a href='/customer_service'>▶ 문의 접수 바로가기</a>
             <br/>
             <br/>
             </Accordion.Body>
