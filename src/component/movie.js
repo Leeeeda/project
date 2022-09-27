@@ -1,8 +1,7 @@
-import {Tabs,Tab,Card } from 'react-bootstrap';
+import {Tabs,Tab,Card,Button } from 'react-bootstrap';
 import {useNavigate} from 'react-router-dom';
 import {useState} from 'react';
 import movieData from './MovieData';
-
 
 
 function Movie (){
@@ -40,6 +39,7 @@ function Movie (){
     <Tab eventKey="korea" title="국내 영화" >
 
         <p className='p'> 국내 인기 있는 영화</p>
+        
         {kMovie1.map((data,i)=>{
             return(
             <Card className='tabCard' key={movies[data].id} 

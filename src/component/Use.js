@@ -4,7 +4,7 @@ function Use(){
     return(
     <div style={{color:'white', fontSize:'18px' ,margin:'20px'}}>
         <br/>
-<h3><strong>Movie Intro 이용약관</strong></h3>
+<h3><strong>Movie Ch.1 이용약관</strong></h3>
 <br/>
 
     Movie Intro 는 인터넷을 통해 이용자에게 영화에 대해 소개하는 홈페이지 입니다.
@@ -14,6 +14,14 @@ function Use(){
     Movie Intro 서비스와 이 서비스를 통해 이용하는 모든 콘텐츠는 개인정, 비상업적 용도로만 사용해야 하며, 타인과 공유해서는 안됩니다.
     <br/>
     <br/>
+
+    <h4>제작기간</h4>
+    <br/>
+    2022.09.19 - 2022.09.30
+    <br/>
+    <br/>
+    <br/>
+
 
     <h4>출처제공</h4>
     <br/>

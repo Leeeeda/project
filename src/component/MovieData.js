@@ -73,7 +73,7 @@
       itemName : '스파이',
       downloadLink : 'https://movie.naver.com/movie/bi/mi/basic.naver?code=118950',
       contentP : '감독: 폴 페이그 출연:멜리사 맥카시, 주드 로, 제이슨 스타뎀',
-      contentS : "건달로 사느냐, 무당으로 사느냐 그것이 문제로다! 보스에게 신임 받고, 동생들에게 사랑 받는 엘리트 건달 광호(박신양). 남 부러울 것 없이 승승장구 하던 그의 건달 인생에 ‘그 분’이 태클을 걸었다?! 호시탐탐 광호를 밟을 기회만 노리던 태주(김정태)의 칼에 맞고 순식간에 바뀐 운명선 때문에 낮에는 박수무당, 밤에는 건달의 투잡족이 되어버린 광호! 하지만 존경하는 보스 가라사대, 쪽 팔리면 건달 아니라 안카나!",
+      contentS : "스파이도 모르는 스파이! 그들이 벌써 긴장했다! 현장 요원들의 임무 수행을 돕는 CIA의 내근 요원 수잔 쿠퍼(멜리사 맥카시). 외모, 임무 수행 등 완벽한 최고의 요원 브래들리 파인(주드 로)의 파트너로 임무를 수행을 하던 중, 핵무기 밀거래를 추진하는 마피아들에게 CIA 현장 요원들의 신분이 모두 노출되는 사건이 발생한다. 마피아들이 모르는 내근 요원 수잔은 CIA의 최대 위기를 극복하고 핵무기의 밀거래를 막기 위해 현장에 투입된다. 그러나, 그녀를 못 믿는 ‘자칭’ 최고의 요원 릭 포드(제이슨 스타뎀)가 그녀와 별개로 임무를 수행하면서 그녀의 미션은 위기에 직면하게 되는데…",
       imgPath : 'https://movie-phinf.pstatic.net/20150507_77/1430975108298pxdJJ_JPEG/movie_image.jpg?type=m203_290_2',
       videoPath :  <iframe width="771" height="434" src="https://www.youtube.com/embed/M8eSd1ETanY?autoplay=1&mute=1;" title="[스파이] 메인 예고편 - 스파이도 모르는 스파이! 5월 21일 대개봉!"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       },

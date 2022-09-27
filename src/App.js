@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Nav, Navbar,Container,Button,Form,Carousel,Row,Col,Card} from 'react-bootstrap';
+import {Nav, Navbar,Container,Button,Form,Carousel,Breadcrumb} from 'react-bootstrap';
 import {useState , useEffect} from 'react';
 import {Route, Routes,useNavigate,Link,useLocation} from 'react-router-dom';
 import MovieCard1 from './component/MovieCard.js';
@@ -30,12 +30,14 @@ function App() {
 
     {/* 상단바 영역 */}
     <Navbar collapseOnSelect expand="lg" 
-    style={{backgroundColor:'rgb(22, 33, 62)',
-    fontSize:'18px',fontWeight:'bold'}}variant="dark">
+    style={{backgroundColor:'rgb(22, 33, 62)', 
+    fontSize:'21px',fontWeight:'bold'}}variant="dark">
       <Container>
-        <Navbar.Brand href="/" style={{fontSize:'24px',fontWeight:'bold'}}>Movie Intro</Navbar.Brand>
+        <Navbar.Brand href="/" 
+        style={{fontSize:'40px',fontFamily:'Pacifico, cursive',position:'relative',right:'30px'}} >
+          Movie Ch.1</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={()=>{navigate('/movie')}}>영화</Nav.Link>
+            <Nav.Link onClick={()=>{navigate('/movie')}} >영화</Nav.Link>
             <Nav.Link onClick={()=>{navigate('/ani')}}>애니메이션</Nav.Link>
             
           </Nav>
@@ -130,20 +132,18 @@ function App() {
 {/* footer 영역 */}
 <footer className='footer'>
   <br/>
-    <Nav className="justify-content-center" activeKey="/home">
-        <Nav.Item>
-          <Nav.Link href="/">전체 페이지</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href='/customer_service'>고객센터</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href='/use'>이용약관</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href='/enquiry'>문의사항</Nav.Link>
-        </Nav.Item>
-        </Nav>
+  
+  <Breadcrumb className='breadcrumb'>
+      <Breadcrumb.Item href="/"> 메인페이지 </Breadcrumb.Item>
+      <Breadcrumb.Item href='/customer_service'>
+          고객센터 
+      </Breadcrumb.Item>
+      <Breadcrumb.Item href='/use'>
+        이용약관 
+      </Breadcrumb.Item>
+      <Breadcrumb.Item href='/enquiry'> 문의사항 </Breadcrumb.Item>
+    </Breadcrumb>
+
         <br/>
         <p className='font-style'>본 콘텐츠의 저작권은 저작권자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</p>
         <br/>

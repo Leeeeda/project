@@ -30,36 +30,36 @@ function Ani (){
             <p className='p'> 온가족이 모여서 보기 좋은 만화</p>
             {comedi1.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id} style={{ width: '11rem' ,height:'14rem' }}  
+            <Card className='tabCard' key={movies[data].id} 
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
-                <Card.Img style={{width: '11rem' ,height:'14rem'}} variant="top" src= {movies[data].imgPath}/>
+                <Card.Img variant="top" src= {movies[data].imgPath}/>
             </Card>
     
         )})}
             <p className='p'> 마음이 따뜻해지는 영화</p>
             {comedi2.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id} style={{ width: '11rem' ,height:'14rem' }}  
+            <Card className='tabCard' key={movies[data].id} 
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
-                <Card.Img style={{width: '11rem' ,height:'14rem'}} variant="top" src= {movies[data].imgPath}/>
+                <Card.Img  variant="top" src= {movies[data].imgPath}/>
             </Card>
     
         )})}
             <p className='p'> 흥미진진! 눈을 못떼는 영화</p>
             {comedi3.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id} style={{ width: '11rem' ,height:'14rem' }}  
+            <Card className='tabCard' key={movies[data].id} 
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
-                <Card.Img style={{width: '11rem' ,height:'14rem'}} variant="top" src= {movies[data].imgPath}/>
+                <Card.Img variant="top" src= {movies[data].imgPath}/>
             </Card>
     
         )})}
             <p className='p'> 지금 뜨는 콘텐츠</p>
             {comedi4.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id} style={{ width: '11rem' ,height:'14rem' }}  
+            <Card className='tabCard' key={movies[data].id}
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
-                <Card.Img style={{width: '11rem' ,height:'14rem'}} variant="top" src= {movies[data].imgPath}/>
+                <Card.Img variant="top" src= {movies[data].imgPath}/>
             </Card>
     
         )})}
@@ -69,36 +69,36 @@ function Ani (){
             <p className='p'> 오늘의 발견!</p>
             {theatrical1.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id} style={{ width: '11rem' ,height:'14rem' }}  
+            <Card className='tabCard' key={movies[data].id}
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
-                <Card.Img style={{width: '11rem' ,height:'14rem'}} variant="top" src= {movies[data].imgPath}/>
+                <Card.Img variant="top" src= {movies[data].imgPath}/>
             </Card>
     
         )})}
             <p className='p'> 귀여운 등장인물, 흥미진진한 스토리!</p>
             {theatrical2.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id} style={{ width: '11rem' ,height:'14rem' }}  
+            <Card className='tabCard' key={movies[data].id}  
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
-                <Card.Img style={{width: '11rem' ,height:'14rem'}} variant="top" src= {movies[data].imgPath}/>
+                <Card.Img variant="top" src= {movies[data].imgPath}/>
             </Card>
     
         )})}
             <p className='p'> 인기 있는 컨텐츠</p>
             {theatrical3.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id} style={{ width: '11rem' ,height:'14rem' }}  
+            <Card className='tabCard' key={movies[data].id}  
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
-                <Card.Img style={{width: '11rem' ,height:'14rem'}} variant="top" src= {movies[data].imgPath}/>
+                <Card.Img variant="top" src= {movies[data].imgPath}/>
             </Card>
     
         )})}
             <p className='p'> 에디터 추천 영화</p>
             {theatrical4.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id} style={{ width: '11rem' ,height:'14rem' }}  
+            <Card className='tabCard' key={movies[data].id}  
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
-                <Card.Img style={{width: '11rem' ,height:'14rem'}} variant="top" src= {movies[data].imgPath}/>
+                <Card.Img  variant="top" src= {movies[data].imgPath}/>
             </Card>
     
         )})}
@@ -109,27 +109,27 @@ function Ani (){
             <p className='p'>다함께 떠나자~! 감정이입 되는 모험 영화</p>
             {adventure1.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id} style={{ width: '11rem' ,height:'14rem' }}  
+            <Card className='tabCard' key={movies[data].id}   
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
-                <Card.Img style={{width: '11rem' ,height:'14rem'}} variant="top" src= {movies[data].imgPath}/>
+                <Card.Img  variant="top" src= {movies[data].imgPath}/>
             </Card>
     
         )})}
             <p className='p'>유쾌한 모험 영화</p>
             {adventure2.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id} style={{ width: '11rem' ,height:'14rem' }}  
+            <Card className='tabCard' key={movies[data].id}   
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
-                <Card.Img style={{width: '11rem' ,height:'14rem'}} variant="top" src= {movies[data].imgPath}/>
+                <Card.Img variant="top" src= {movies[data].imgPath}/>
             </Card>
     
         )})}
             <p className='p'> 미스테리,신비로운 모험 영화</p>
             {adventure3.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id} style={{ width: '11rem' ,height:'14rem' }}  
+            <Card className='tabCard' key={movies[data].id} 
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
-                <Card.Img style={{width: '11rem' ,height:'14rem'}} variant="top" src= {movies[data].imgPath}/>
+                <Card.Img variant="top" src= {movies[data].imgPath}/>
             </Card>
     
         )})}

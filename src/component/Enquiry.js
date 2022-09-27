@@ -4,7 +4,7 @@ function Enquiry(){
     return (
         <div>
             <br/>
-        <h3 style={{color: 'white', fontWeight:'bold'}}> 자주하는 질문</h3>
+        <h3 style={{color: 'white', fontWeight:'bold', margin:'40px'}}> 자주하는 질문</h3>
         <Accordion>
             <Accordion.Item eventKey="0">
             <Accordion.Header> Q.  영상이 재생이 안돼요.

@@ -13,12 +13,25 @@ function Customer() {
         <Accordion.Item eventKey="4">
         <Accordion.Header>애니메이션 컨텐츠 업데이트 22.09.25</Accordion.Header>
         <Accordion.Body>
+            
         애니메이션 컨텐츠 업데이트
+        <br/>
+        <br/>
         -주토피아 : 업데이트 완료 22.09.25
+        <br/>
+        <br/>
         -극장판 귀멸의 칼날: 무한열차편 : 업데이트 완료 22.09.25
+        <br/>
+        <br/>
         -뽀로로 극장판 보물섬 대모험 : 업데이트 완료 22.09.25
+        <br/>
+        <br/>
         -니모를 찾아서 3D : 업데이트 완료 22.09.25
+        <br/>
+        <br/>
         -코렐라인: 비밀의 문 : 업데이트 완료 22.09.25
+        <br/>
+        <br/>
         </Accordion.Body>
     </Accordion.Item>
     <Accordion.Item eventKey="0">
@@ -86,7 +99,7 @@ function Customer() {
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
         <br/>
-        <Form.Label>오류 문의</Form.Label>
+        <Form.Label>오류 내용</Form.Label>
         <Form.Control as="textarea" rows={3} />
         </Form.Group>
         <br/>
@@ -125,7 +138,7 @@ function Customer() {
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
         <br/>
-        <Form.Label>오류 문의</Form.Label>
+        <Form.Label>문의 내용</Form.Label>
         <Form.Control as="textarea" rows={3} />
         </Form.Group>
         <br/>

@@ -1,3 +1,5 @@
+
+
 .main{
   background-color: rgb(22, 33, 62);
   margin: 0;
@@ -167,10 +169,12 @@
 
 .tabCard:hover{
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 .tabCard:hover img{
   transform: scale(1.1);
+
 }
 
 @media only screen and ( max-width:1029px ){
@@ -266,7 +270,22 @@
   margin: 0;
   height: 500px;
   clear: both;
+  
 }
+.breadcrumb{
+  position: relative;
+  margin-top: 50px;
+  left: 22%;
+  width: 700px;
+}
+
+.breadcrumb-item{
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100px;
+  
+}
+
 
 .accordion{
   width: 90%;
