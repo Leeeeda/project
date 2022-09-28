@@ -134,7 +134,7 @@ function App() {
   <br/>
   
   <Breadcrumb className='breadcrumb'>
-      <Breadcrumb.Item href="/project"> 메인페이지 </Breadcrumb.Item>
+      <Breadcrumb.Item onClick={()=>{navigate('/')}}> 메인페이지 </Breadcrumb.Item>
       <Breadcrumb.Item onClick={()=>{navigate('/customer_service')}}>
           고객센터 
       </Breadcrumb.Item>
