@@ -33,7 +33,7 @@ function App() {
     style={{backgroundColor:'rgb(22, 33, 62)', 
     fontSize:'21px',fontWeight:'bold'}}variant="dark">
       <Container>
-        <Navbar.Brand href="/" 
+        <Navbar.Brand onClick={()=>{navigate('/')}}
         style={{fontSize:'40px',fontFamily:'Pacifico, cursive',position:'relative',right:'30px'}} >
           Movie Ch.1</Navbar.Brand>
           <Nav className="me-auto">
@@ -123,7 +123,7 @@ function App() {
           <Route path='/use' element={<Use></Use>}></Route>
           <Route path='/enquiry' element={<Enquiry></Enquiry>}></Route>
 
-          <Route path='*' element={<div>404 Not Found</div>} />
+          <Route path='*' element={<div style={{color:'white'}}>404 Not Found</div>} />
         </Routes>
 
     {/* Routes */}
@@ -134,14 +134,14 @@ function App() {
   <br/>
   
   <Breadcrumb className='breadcrumb'>
-      <Breadcrumb.Item href="/"> 메인페이지 </Breadcrumb.Item>
-      <Breadcrumb.Item href='/customer_service'>
+      <Breadcrumb.Item href="/project"> 메인페이지 </Breadcrumb.Item>
+      <Breadcrumb.Item onClick={()=>{navigate('/customer_service')}}>
           고객센터 
       </Breadcrumb.Item>
-      <Breadcrumb.Item href='/use'>
+      <Breadcrumb.Item onClick={()=>{navigate('/use')}}>
         이용약관 
       </Breadcrumb.Item>
-      <Breadcrumb.Item href='/enquiry'> 문의사항 </Breadcrumb.Item>
+      <Breadcrumb.Item onClick={()=>{navigate('/enquiry')}}> 문의사항 </Breadcrumb.Item>
     </Breadcrumb>
 
         <br/>
