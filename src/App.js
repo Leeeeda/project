@@ -56,7 +56,7 @@ function App() {
 
 
         <Routes>
-          <Route path='/' element={
+          <Route path='/project' element={
           
           <div className='carouselBanner'>
              {/* 배너 부분 */}
