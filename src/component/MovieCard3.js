@@ -22,10 +22,10 @@ function MovieCard3({movies,id}){
         <Carousel.Item>
         {horror.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id}  
+            <Card key={movies[data].id}  
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
                 <Card.Img  variant="top" src= {movies[data].imgPath}/>
-                <div class="intro">
+                <div className="intro">
                 <Card.Title>{movies[data].itemName}</Card.Title>
                 <Card.Text>{movies[data].contentP}</Card.Text>
                 </div>
@@ -37,10 +37,10 @@ function MovieCard3({movies,id}){
     <Carousel.Item>
     {horror1.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id} 
+            <Card key={movies[data].id} 
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
                 <Card.Img variant="top" src= {movies[data].imgPath}/>
-                <div class="intro">
+                <div className="intro">
                 <Card.Title>{movies[data].itemName}</Card.Title>
                 <Card.Text>{movies[data].contentP}</Card.Text>
                 </div>
@@ -51,10 +51,10 @@ function MovieCard3({movies,id}){
     <Carousel.Item>
     {horror2.map((data,i)=>{
             return(
-            <Card class='card' key={movies[data].id}  
+            <Card  key={movies[data].id}  
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
                 <Card.Img  variant="top" src= {movies[data].imgPath}/>
-                <div class="intro">
+                <div className="intro">
                 <Card.Title>{movies[data].itemName}</Card.Title>
                 <Card.Text>{movies[data].contentP}</Card.Text>
                 </div>

@@ -27,7 +27,7 @@ function MovieCard1({movies,id}){
                 onClick={()=>{navigate('/movieInfo/'+ movies[data].id);
                 }}>
         <Card.Img variant="top" src= {movies[data].imgPath}/>
-        <div class="intro">
+        <div className="intro">
         <Card.Title>{movies[data].itemName}</Card.Title>
         <Card.Text>{movies[data].contentP}</Card.Text>
     </div>
@@ -42,7 +42,7 @@ function MovieCard1({movies,id}){
             return(
                 <Card  key={movies[data].id} onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
         <Card.Img variant="top" src= {movies[data].imgPath}/>
-        <div class="intro">
+        <div className="intro">
         <Card.Title>{movies[data].itemName}</Card.Title>
         <Card.Text>{movies[data].contentP}</Card.Text>
     </div>
@@ -56,7 +56,7 @@ function MovieCard1({movies,id}){
             return(
                 <Card  key={movies[data].id} onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
         <Card.Img variant="top" src= {movies[data].imgPath}/>
-        <div class="intro">
+        <div className="intro">
         <Card.Title>{movies[data].itemName}</Card.Title>
         <Card.Text>{movies[data].contentP}</Card.Text>
     </div>

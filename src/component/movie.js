@@ -4,7 +4,9 @@ import {useState} from 'react';
 import movieData from './MovieData';
 
 
+
 function Movie (){
+    
     let [movies] = useState(movieData);
     let navigate=useNavigate();
     let [kMovie1] = useState([0,8,9,11,16,4,25,45,47,44]);
@@ -37,14 +39,15 @@ function Movie (){
             defaultActiveKey="korea"
         >
     <Tab eventKey="korea" title="국내 영화" >
-
+        
         <p className='p'> 국내 인기 있는 영화</p>
         
         {kMovie1.map((data,i)=>{
             return(
             <Card className='tabCard' key={movies[data].id} 
-                onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} >
-                <Card.Img variant="top" src= {movies[data].imgPath}/>
+                onClick={()=>{navigate('/movieInfo/'+ movies[data].id)}} 
+                >
+                <Card.Img variant="top" src= {movies[data].imgPath}></Card.Img>
             </Card>)})}  
         
         <p className='p'> 한국이 만든 컨텐츠</p> 
