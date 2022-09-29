@@ -14,6 +14,11 @@
   font-size: 20px;
 }
 
+.navbar {
+  width: 1200px;
+  left: 3%;
+}
+
 /* 캐러셀 영역 */
 
 .carousel{
@@ -128,6 +133,7 @@
 .nav-tabs{
   border-color: rgb(83, 52, 131);
   border-width: 1px;
+  width: 1200px;
 }
 .nav-tabs .nav-link{
   background-color:rgb(22, 33, 62) ;
@@ -180,6 +186,7 @@
 
 }
 
+/* 미디어 쿼리 부분 */
 @media only screen and ( max-width:1029px ){
   
   .card{
@@ -197,7 +204,7 @@
   }
   .tab-content{
     right: 50px;
-    
+    width: 1000px;
   }
   .tabCard{
     width: 150px;
@@ -234,6 +241,9 @@
     width: 130px;
     height: 11rem;
   }
+  .tab-content{
+    width: 800px;
+  }
 }
 
 @media only screen and ( max-width:767px){
@@ -257,6 +267,9 @@
   .tabCard{
     width: 130px;
     height: 11rem;
+  }
+  .tab-content{
+    width: 800px;
   }
 }
 

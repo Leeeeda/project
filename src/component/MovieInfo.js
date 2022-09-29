@@ -1,10 +1,9 @@
-import {Card,ListGroup,Ratio,CloseButton,Button} from 'react-bootstrap'
-import {useParams, useNavigate, Link} from 'react-router-dom'
-import {useState} from 'react'
+import {Card,Ratio,CloseButton,Button} from 'react-bootstrap'
+import {useParams, useNavigate} from 'react-router-dom'
+
 
 
 function MovieInfo({movies}){
-    let {likeCnt, setLikeCnt}=useState(0);
     let {id} = useParams();
     let movieInfo = movies.find( (data, i) => {
         return data.id == id;
